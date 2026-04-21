@@ -102,7 +102,7 @@ namespace Blood_Donation_Matcher
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            LoadForm(new RegisterForm());
+             LoadForm(new RegisterForm());
         }
 
         private void btnHome_Click(object sender, EventArgs e)

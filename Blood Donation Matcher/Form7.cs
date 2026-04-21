@@ -57,5 +57,12 @@ namespace Blood_Donation_Matcher
         {
 
         }
+
+        private void btnRegisterNow_Click(object sender, EventArgs e)
+        {
+           this.Hide ();
+            RegisterForm form = new RegisterForm();
+            form.Show();
+        }
     }
 }

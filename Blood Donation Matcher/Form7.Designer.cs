@@ -31,6 +31,19 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeContentForm));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnRegisterNow = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -46,22 +59,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -79,6 +80,7 @@
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.btnRegisterNow);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.label25);
             this.panel1.Controls.Add(this.label24);
@@ -108,8 +110,146 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(-4, 60);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1342, 1500);
+            this.panel1.Size = new System.Drawing.Size(1421, 1525);
             this.panel1.TabIndex = 1;
+            // 
+            // btnRegisterNow
+            // 
+            this.btnRegisterNow.BackColor = System.Drawing.Color.Red;
+            this.btnRegisterNow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegisterNow.ForeColor = System.Drawing.Color.White;
+            this.btnRegisterNow.Location = new System.Drawing.Point(986, 1421);
+            this.btnRegisterNow.Name = "btnRegisterNow";
+            this.btnRegisterNow.Size = new System.Drawing.Size(197, 85);
+            this.btnRegisterNow.TabIndex = 27;
+            this.btnRegisterNow.Text = "  Register Now";
+            this.btnRegisterNow.UseVisualStyleBackColor = false;
+            this.btnRegisterNow.Click += new System.EventHandler(this.btnRegisterNow_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(537, 946);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(774, 460);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 26;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(92, 1389);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(368, 22);
+            this.label25.TabIndex = 25;
+            this.label25.Text = "Choose the donation option that suits you ❤️";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(90, 1323);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(420, 44);
+            this.label24.TabIndex = 24;
+            this.label24.Text = "Donating blood is a simple act that can save lives.\nBe part of a community that c" +
+    "ares and helps others.";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(61, 1283);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(215, 25);
+            this.label23.TabIndex = 23;
+            this.label23.Text = "💬 Make a Difference";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(83, 1153);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(350, 66);
+            this.label22.TabIndex = 22;
+            this.label22.Text = "* Helps provide blood bags and treatment\n* Supports patients who cannot afford ca" +
+    "re\n* Every contribution matters";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(78, 1115);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(302, 22);
+            this.label21.TabIndex = 21;
+            this.label21.Text = "Support patients by donating money.";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(47, 1077);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(209, 25);
+            this.label20.TabIndex = 20;
+            this.label20.Text = "💰 Financial Support";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(84, 945);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(244, 66);
+            this.label19.TabIndex = 19;
+            this.label19.Text = "* Convenient and time-saving\n* Suitable if you can’t travel\n* Comfortable and fle" +
+    "xible";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(75, 909);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(471, 22);
+            this.label18.TabIndex = 18;
+            this.label18.Text = "A medical team can come to your location to collect blood.";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(43, 874);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(236, 25);
+            this.label17.TabIndex = 17;
+            this.label17.Text = "🏠 Home Visit Donation";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(61, 760);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(387, 66);
+            this.label16.TabIndex = 16;
+            this.label16.Text = "* Safe and supervised by medical professionals\n* Quick and efficient\n* Ideal for " +
+    "urgent cases";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(60, 722);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(413, 22);
+            this.label15.TabIndex = 15;
+            this.label15.Text = "Donate blood by visiting a hospital or blood center.";
             // 
             // pictureBox2
             // 
@@ -264,131 +404,6 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Blood Types:";
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(60, 722);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(413, 22);
-            this.label15.TabIndex = 15;
-            this.label15.Text = "Donate blood by visiting a hospital or blood center.";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(61, 760);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(387, 66);
-            this.label16.TabIndex = 16;
-            this.label16.Text = "* Safe and supervised by medical professionals\n* Quick and efficient\n* Ideal for " +
-    "urgent cases";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(43, 874);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(236, 25);
-            this.label17.TabIndex = 17;
-            this.label17.Text = "🏠 Home Visit Donation";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(75, 909);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(471, 22);
-            this.label18.TabIndex = 18;
-            this.label18.Text = "A medical team can come to your location to collect blood.";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(84, 945);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(244, 66);
-            this.label19.TabIndex = 19;
-            this.label19.Text = "* Convenient and time-saving\n* Suitable if you can’t travel\n* Comfortable and fle" +
-    "xible";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(47, 1077);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(209, 25);
-            this.label20.TabIndex = 20;
-            this.label20.Text = "💰 Financial Support";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(78, 1115);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(302, 22);
-            this.label21.TabIndex = 21;
-            this.label21.Text = "Support patients by donating money.";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(83, 1153);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(350, 66);
-            this.label22.TabIndex = 22;
-            this.label22.Text = "* Helps provide blood bags and treatment\n* Supports patients who cannot afford ca" +
-    "re\n* Every contribution matters";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(61, 1283);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(215, 25);
-            this.label23.TabIndex = 23;
-            this.label23.Text = "💬 Make a Difference";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(90, 1323);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(420, 44);
-            this.label24.TabIndex = 24;
-            this.label24.Text = "Donating blood is a simple act that can save lives.\nBe part of a community that c" +
-    "ares and helps others.";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(92, 1389);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(368, 22);
-            this.label25.TabIndex = 25;
-            this.label25.Text = "Choose the donation option that suits you ❤️";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(537, 946);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(774, 460);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 26;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
             // HomeContentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -404,9 +419,9 @@
             this.Text = " ";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -443,5 +458,6 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button btnRegisterNow;
     }
 }
