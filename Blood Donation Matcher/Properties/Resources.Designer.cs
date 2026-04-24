@@ -63,6 +63,16 @@ namespace Blood_Donation_Matcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BLOOD {
+            get {
+                object obj = ResourceManager.GetObject("BLOOD", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap nm {
             get {
                 object obj = ResourceManager.GetObject("nm", resourceCulture);

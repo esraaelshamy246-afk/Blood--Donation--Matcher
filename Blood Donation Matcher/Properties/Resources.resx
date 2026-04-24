@@ -121,4 +121,7 @@
   <data name="nm" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nm.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BLOOD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BLOOD.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

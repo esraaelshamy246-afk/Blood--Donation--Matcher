@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace Blood_Donation_Matcher
 {
-    public partial class Form1 : Form
+    public partial class form1 : Form
     {
-        public Form1()
+        public form1()
         {
             InitializeComponent();
-            LoadForm(new HomeContentForm());
             this.DoubleBuffered = true;
             foreach (Control control in this.Controls)
             {
@@ -28,12 +27,13 @@ namespace Blood_Donation_Matcher
         }
         private void LoadForm(Form form)
         {
-            contentPanel.Controls.Clear();
+            maincontentPanel.Controls.Clear();
             form.TopLevel = false;
             form.FormBorderStyle = FormBorderStyle.None;
             form.Dock = DockStyle.Fill;
-            contentPanel.Controls.Add(form);
+            maincontentPanel.Controls.Add(form);
             form.Show();
+            form.BringToFront();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -111,6 +111,16 @@ namespace Blood_Donation_Matcher
         }
 
         private void contentPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+           LoadForm(new HomeContentForm());
+        }
+
+        private void maincontentPanel_Paint(object sender, PaintEventArgs e)
         {
 
         }
