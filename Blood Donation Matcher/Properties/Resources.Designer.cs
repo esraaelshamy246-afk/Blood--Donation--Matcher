@@ -19,7 +19,7 @@ namespace Blood_Donation_Matcher.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "18.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -76,6 +76,26 @@ namespace Blood_Donation_Matcher.Properties {
         internal static System.Drawing.Bitmap nm {
             get {
                 object obj = ResourceManager.GetObject("nm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2026_04_25_at_2_04_52_PM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2026-04-25 at 2.04.52 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2026_04_25_at_3_45_47_PM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2026-04-25 at 3.45.47 PM", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

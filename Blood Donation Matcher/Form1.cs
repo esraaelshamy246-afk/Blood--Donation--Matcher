@@ -124,5 +124,10 @@ namespace Blood_Donation_Matcher
         {
 
         }
+
+        private void btnEligibilitycheck_Click(object sender, EventArgs e)
+        {
+            LoadForm(new Eligibility_check_form());
+        }
     }
 }

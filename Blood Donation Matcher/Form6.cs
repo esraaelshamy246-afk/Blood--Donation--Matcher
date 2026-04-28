@@ -59,7 +59,7 @@ namespace Blood_Donation_Matcher
             
             string name = textBox2.Text;
             string phone = textBox3.Text;
-            string age = textBox4.Text;
+            string age = numericUpDown1.Text;
             string address = textBox5.Text;
             string bloodType = comboBox1.Text;
             string city = comboBox2.Text;
@@ -89,9 +89,9 @@ namespace Blood_Donation_Matcher
         private void button3_Click(object sender, EventArgs e)
         {
    
-            textBox2.Text = ""; 
+            textBox2.Text = "";
+            numericUpDown1.Text = "";
             textBox3.Text = ""; 
-            textBox4.Text = ""; 
             textBox5.Text = "";
             textBox6.Text = "";
             
@@ -113,6 +113,100 @@ namespace Blood_Donation_Matcher
         private void RegisterForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_MouseEnter(object sender, EventArgs e)
+        {
+            textBox2.BackColor= Color.LightGray;
+        }
+        private void textBox2_MouseLeave(object sender, EventArgs e)
+        {
+            textBox2.BackColor = Color.White;
+        }
+
+        private void numericUpDown1_MouseDown(object sender, MouseEventArgs e)
+        {
+            numericUpDown1.BackColor = Color.White;
+        }
+
+        private void numericUpDown1_MouseClick(object sender, MouseEventArgs e)
+        {
+            numericUpDown1.BackColor = Color.White;
+        }
+
+        private void numericUpDown1_MouseUp(object sender, MouseEventArgs e)
+        {
+            numericUpDown1.BackColor = Color.White;
+        }
+
+        private void textBox4_MouseEnter(object sender, EventArgs e)
+        {
+            textBox3.BackColor= Color.LightGray;
+        }
+
+        private void textBox4_MouseLeave(object sender, EventArgs e)
+        {
+            textBox3.BackColor= Color.White;
+        }
+
+        private void comboBox1_MouseEnter(object sender, EventArgs e)
+        {
+            comboBox1.BackColor= Color.LightGray;
+        }
+
+        private void comboBox1_MouseLeave(object sender, EventArgs e)
+        {
+            comboBox1.BackColor = Color.White;
+        }
+
+        private void textBox6_MouseLeave(object sender, EventArgs e)
+        {
+            textBox6.BackColor = Color.White;
+        }
+
+        private void textBox6_MouseEnter(object sender, EventArgs e)
+        {
+            textBox6.BackColor= Color.LightGray;
+        }
+
+        private void comboBox2_MouseEnter(object sender, EventArgs e)
+        {
+            comboBox2.BackColor = Color.LightGray;
+        }
+
+        private void comboBox2_MouseLeave(object sender, EventArgs e)
+        {
+            comboBox2.BackColor = Color.White;
+        }
+
+        private void textBox5_MouseEnter(object sender, EventArgs e)
+        {
+            textBox5.BackColor= Color.LightGray;
+        }
+
+        private void textBox5_MouseLeave(object sender, EventArgs e)
+        {
+            textBox5.BackColor= Color.White;
+        }
+
+        private void button1_MouseEnter(object sender, EventArgs e)
+        {
+            button1.BackColor = Color.LightGray;
+        }
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            button1.BackColor = Color.White;
+        }
+
+        private void textBox2_MouseLeave_1(object sender, EventArgs e)
+        {
+            textBox2.BackColor = Color.White;
         }
     }
     }
