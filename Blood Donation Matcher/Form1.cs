@@ -82,7 +82,7 @@ namespace Blood_Donation_Matcher
 
         private void btnDonate_Click(object sender, EventArgs e)
         {
-            LoadForm(new DonateForm());
+            LoadForm(new DonateDetailsForm());
         }
 
         private void btnHospitals_Click(object sender, EventArgs e)

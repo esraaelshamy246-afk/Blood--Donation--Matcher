@@ -63,9 +63,59 @@ namespace Blood_Donation_Matcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _10d97599b676ea5970a27ec37b8ecbe5 {
+            get {
+                object obj = ResourceManager.GetObject("10d97599b676ea5970a27ec37b8ecbe5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BLOOD {
             get {
                 object obj = ResourceManager.GetObject("BLOOD", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap f62e7e78b168df264b9f55541938b5cf {
+            get {
+                object obj = ResourceManager.GetObject("f62e7e78b168df264b9f55541938b5cf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gemini_Generated_Image_hlij0ahlij0ahlij {
+            get {
+                object obj = ResourceManager.GetObject("Gemini_Generated_Image_hlij0ahlij0ahlij", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gemini_Generated_Image_j5jglej5jglej5jg {
+            get {
+                object obj = ResourceManager.GetObject("Gemini_Generated_Image_j5jglej5jglej5jg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gemini_Generated_Image_sdcq4esdcq4esdcq {
+            get {
+                object obj = ResourceManager.GetObject("Gemini_Generated_Image_sdcq4esdcq4esdcq", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -86,6 +136,16 @@ namespace Blood_Donation_Matcher.Properties {
         internal static System.Drawing.Bitmap WhatsApp_Image_2026_04_25_at_2_04_52_PM {
             get {
                 object obj = ResourceManager.GetObject("WhatsApp Image 2026-04-25 at 2.04.52 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2026_04_25_at_2_54_31_PM__10_ {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2026-04-25 at 2.54.31 PM (10)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

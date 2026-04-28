@@ -33,7 +33,6 @@
             this.Panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panelMenu = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnHome = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
             this.btnDonate = new System.Windows.Forms.Button();
             this.btnRequest = new System.Windows.Forms.Button();
@@ -42,6 +41,7 @@
             this.timerMenu = new System.Windows.Forms.Timer(this.components);
             this.btnEligibilitycheck = new System.Windows.Forms.Button();
             this.maincontentPanel = new System.Windows.Forms.Panel();
+            this.btnHome = new System.Windows.Forms.Button();
             this.pictureBoxMenu = new System.Windows.Forms.PictureBox();
             this.Panel1.SuspendLayout();
             this.panelMenu.SuspendLayout();
@@ -97,22 +97,6 @@
             this.panelMenu.WrapContents = false;
             this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
-            // btnHome
-            // 
-            this.btnHome.BackColor = System.Drawing.Color.White;
-            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.Black;
-            this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
-            this.btnHome.Location = new System.Drawing.Point(15, 40);
-            this.btnHome.Margin = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(161, 39);
-            this.btnHome.TabIndex = 5;
-            this.btnHome.Text = "Home";
-            this.btnHome.UseVisualStyleBackColor = false;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
             // btnRegister
             // 
             this.btnRegister.BackColor = System.Drawing.Color.White;
@@ -122,7 +106,7 @@
             this.btnRegister.Location = new System.Drawing.Point(15, 99);
             this.btnRegister.Margin = new System.Windows.Forms.Padding(0, 10, 0, 10);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(161, 39);
+            this.btnRegister.Size = new System.Drawing.Size(170, 39);
             this.btnRegister.TabIndex = 2;
             this.btnRegister.Text = "Registration";
             this.btnRegister.UseVisualStyleBackColor = false;
@@ -137,7 +121,7 @@
             this.btnDonate.Location = new System.Drawing.Point(15, 158);
             this.btnDonate.Margin = new System.Windows.Forms.Padding(0, 10, 0, 10);
             this.btnDonate.Name = "btnDonate";
-            this.btnDonate.Size = new System.Drawing.Size(161, 39);
+            this.btnDonate.Size = new System.Drawing.Size(170, 39);
             this.btnDonate.TabIndex = 0;
             this.btnDonate.Text = "Donate";
             this.btnDonate.UseVisualStyleBackColor = false;
@@ -152,7 +136,7 @@
             this.btnRequest.Location = new System.Drawing.Point(15, 217);
             this.btnRequest.Margin = new System.Windows.Forms.Padding(0, 10, 0, 10);
             this.btnRequest.Name = "btnRequest";
-            this.btnRequest.Size = new System.Drawing.Size(161, 39);
+            this.btnRequest.Size = new System.Drawing.Size(170, 39);
             this.btnRequest.TabIndex = 3;
             this.btnRequest.Text = "Request";
             this.btnRequest.UseVisualStyleBackColor = false;
@@ -167,7 +151,7 @@
             this.btnHospitals.Location = new System.Drawing.Point(15, 276);
             this.btnHospitals.Margin = new System.Windows.Forms.Padding(0, 10, 0, 10);
             this.btnHospitals.Name = "btnHospitals";
-            this.btnHospitals.Size = new System.Drawing.Size(161, 39);
+            this.btnHospitals.Size = new System.Drawing.Size(170, 39);
             this.btnHospitals.TabIndex = 4;
             this.btnHospitals.Text = "Hospitals";
             this.btnHospitals.UseVisualStyleBackColor = false;
@@ -182,7 +166,7 @@
             this.btnFeedback.Location = new System.Drawing.Point(15, 335);
             this.btnFeedback.Margin = new System.Windows.Forms.Padding(0, 10, 0, 10);
             this.btnFeedback.Name = "btnFeedback";
-            this.btnFeedback.Size = new System.Drawing.Size(161, 39);
+            this.btnFeedback.Size = new System.Drawing.Size(170, 39);
             this.btnFeedback.TabIndex = 1;
             this.btnFeedback.Text = "Feedback";
             this.btnFeedback.UseVisualStyleBackColor = false;
@@ -202,7 +186,7 @@
             this.btnEligibilitycheck.Location = new System.Drawing.Point(15, 394);
             this.btnEligibilitycheck.Margin = new System.Windows.Forms.Padding(0, 10, 0, 10);
             this.btnEligibilitycheck.Name = "btnEligibilitycheck";
-            this.btnEligibilitycheck.Size = new System.Drawing.Size(161, 39);
+            this.btnEligibilitycheck.Size = new System.Drawing.Size(170, 39);
             this.btnEligibilitycheck.TabIndex = 6;
             this.btnEligibilitycheck.Text = "Eligibility check";
             this.btnEligibilitycheck.UseVisualStyleBackColor = false;
@@ -217,6 +201,22 @@
             this.maincontentPanel.Size = new System.Drawing.Size(731, 462);
             this.maincontentPanel.TabIndex = 2;
             this.maincontentPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.maincontentPanel_Paint);
+            // 
+            // btnHome
+            // 
+            this.btnHome.BackColor = System.Drawing.Color.White;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.Color.Black;
+            this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
+            this.btnHome.Location = new System.Drawing.Point(15, 40);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(0, 10, 0, 10);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(170, 39);
+            this.btnHome.TabIndex = 5;
+            this.btnHome.Text = "Home";
+            this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // pictureBoxMenu
             // 
