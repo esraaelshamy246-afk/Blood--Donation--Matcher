@@ -206,7 +206,7 @@ namespace Blood_Donation_Matcher
 
         private void textBox2_MouseLeave_1(object sender, EventArgs e)
         {
-            textBox2.BackColor = Color.White;
+            textBox2.BackColor = Color.White;  
         }
     }
     }

@@ -131,7 +131,7 @@
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(474, 24);
+            this.numericUpDown1.Size = new System.Drawing.Size(474, 21);
             this.numericUpDown1.TabIndex = 31;
             this.numericUpDown1.Value = new decimal(new int[] {
             18,
@@ -149,7 +149,7 @@
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(28, 192);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(91, 23);
+            this.label6.Size = new System.Drawing.Size(71, 17);
             this.label6.TabIndex = 1;
             this.label6.Text = "Full Name";
             // 
@@ -160,7 +160,7 @@
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(43, 153);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(205, 28);
+            this.label3.Size = new System.Drawing.Size(160, 21);
             this.label3.TabIndex = 4;
             this.label3.Text = "Create Your Account";
             // 
@@ -171,7 +171,7 @@
             this.label1.Font = new System.Drawing.Font("Modern No. 20", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(330, 67);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(418, 38);
+            this.label1.Size = new System.Drawing.Size(329, 31);
             this.label1.TabIndex = 1;
             this.label1.Text = "Blood Donation Matcher";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -184,7 +184,7 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(332, 98);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(261, 25);
+            this.label2.Size = new System.Drawing.Size(211, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "join us and help save lives❤️";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -208,7 +208,7 @@
             this.label4.Font = new System.Drawing.Font("Segoe MDL2 Assets", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(11, 150);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 27);
+            this.label4.Size = new System.Drawing.Size(28, 21);
             this.label4.TabIndex = 5;
             this.label4.Text = "👤";
             // 
@@ -218,7 +218,7 @@
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(456, 590);
+            this.button2.Location = new System.Drawing.Point(231, 590);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(142, 44);
             this.button2.TabIndex = 6;
@@ -231,9 +231,9 @@
             this.button3.BackColor = System.Drawing.Color.Maroon;
             this.button3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(837, 590);
+            this.button3.Location = new System.Drawing.Point(506, 590);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(111, 44);
+            this.button3.Size = new System.Drawing.Size(153, 44);
             this.button3.TabIndex = 7;
             this.button3.Text = "clear";
             this.button3.UseVisualStyleBackColor = false;
@@ -258,7 +258,7 @@
             this.radioButton2.ForeColor = System.Drawing.Color.Black;
             this.radioButton2.Location = new System.Drawing.Point(13, 14);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(94, 27);
+            this.radioButton2.Size = new System.Drawing.Size(77, 23);
             this.radioButton2.TabIndex = 9;
             this.radioButton2.Text = "Patient";
             this.radioButton2.UseVisualStyleBackColor = true;
@@ -271,7 +271,7 @@
             this.label16.ForeColor = System.Drawing.Color.Gray;
             this.label16.Location = new System.Drawing.Point(33, 40);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(76, 18);
+            this.label16.Size = new System.Drawing.Size(62, 14);
             this.label16.TabIndex = 16;
             this.label16.Text = "I need blood ";
             // 
@@ -282,7 +282,7 @@
             this.label23.ForeColor = System.Drawing.Color.Silver;
             this.label23.Location = new System.Drawing.Point(179, 482);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(78, 17);
+            this.label23.Size = new System.Drawing.Size(60, 13);
             this.label23.TabIndex = 30;
             this.label23.Text = "(optional)";
             // 
@@ -293,7 +293,7 @@
             this.label22.ForeColor = System.Drawing.Color.Black;
             this.label22.Location = new System.Drawing.Point(13, 480);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(169, 19);
+            this.label22.Size = new System.Drawing.Size(130, 13);
             this.label22.TabIndex = 29;
             this.label22.Text = "Upload Medical Report ";
             // 
@@ -301,7 +301,7 @@
             // 
             this.textBox5.Location = new System.Drawing.Point(155, 511);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(835, 22);
+            this.textBox5.Size = new System.Drawing.Size(835, 20);
             this.textBox5.TabIndex = 28;
             this.textBox5.MouseEnter += new System.EventHandler(this.textBox5_MouseEnter);
             this.textBox5.MouseLeave += new System.EventHandler(this.textBox5_MouseLeave);
@@ -325,7 +325,7 @@
             this.label21.ForeColor = System.Drawing.Color.Black;
             this.label21.Location = new System.Drawing.Point(525, 417);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(42, 23);
+            this.label21.Size = new System.Drawing.Size(32, 17);
             this.label21.TabIndex = 26;
             this.label21.Text = "City";
             // 
@@ -335,7 +335,7 @@
             this.label20.Font = new System.Drawing.Font("Segoe MDL2 Assets", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(503, 417);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(25, 17);
+            this.label20.Size = new System.Drawing.Size(20, 13);
             this.label20.TabIndex = 25;
             this.label20.Text = "🏙️";
             // 
@@ -374,7 +374,7 @@
             "Sohag"});
             this.comboBox2.Location = new System.Drawing.Point(506, 439);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(484, 24);
+            this.comboBox2.Size = new System.Drawing.Size(484, 21);
             this.comboBox2.TabIndex = 24;
             this.comboBox2.MouseEnter += new System.EventHandler(this.comboBox2_MouseEnter);
             this.comboBox2.MouseLeave += new System.EventHandler(this.comboBox2_MouseLeave);
@@ -384,7 +384,7 @@
             this.comboBox1.DropDownWidth = 121;
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.ItemHeight = 17;
+            this.comboBox1.ItemHeight = 13;
             this.comboBox1.Items.AddRange(new object[] {
             "A+",
             "A-",
@@ -396,7 +396,7 @@
             "AB-"});
             this.comboBox1.Location = new System.Drawing.Point(507, 283);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(483, 25);
+            this.comboBox1.Size = new System.Drawing.Size(483, 21);
             this.comboBox1.TabIndex = 2;
             this.comboBox1.MouseEnter += new System.EventHandler(this.comboBox1_MouseEnter);
             this.comboBox1.MouseLeave += new System.EventHandler(this.comboBox1_MouseLeave);
@@ -406,7 +406,7 @@
             this.textBox6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox6.Location = new System.Drawing.Point(10, 435);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(474, 29);
+            this.textBox6.Size = new System.Drawing.Size(474, 25);
             this.textBox6.TabIndex = 21;
             this.textBox6.MouseEnter += new System.EventHandler(this.textBox6_MouseEnter);
             this.textBox6.MouseLeave += new System.EventHandler(this.textBox6_MouseLeave);
@@ -418,7 +418,7 @@
             this.label18.ForeColor = System.Drawing.Color.Black;
             this.label18.Location = new System.Drawing.Point(31, 415);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(74, 23);
+            this.label18.Size = new System.Drawing.Size(57, 17);
             this.label18.TabIndex = 18;
             this.label18.Text = "Address";
             // 
@@ -428,7 +428,7 @@
             this.label17.Font = new System.Drawing.Font("Segoe MDL2 Assets", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(9, 413);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(29, 19);
+            this.label17.Size = new System.Drawing.Size(17, 15);
             this.label17.TabIndex = 17;
             this.label17.Text = "📍";
             // 
@@ -439,7 +439,7 @@
             this.label14.ForeColor = System.Drawing.Color.Black;
             this.label14.Location = new System.Drawing.Point(525, 254);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(105, 23);
+            this.label14.Size = new System.Drawing.Size(81, 17);
             this.label14.TabIndex = 14;
             this.label14.Text = "Blood Type ";
             // 
@@ -450,7 +450,7 @@
             this.label13.Font = new System.Drawing.Font("Segoe MDL2 Assets", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(503, 254);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(29, 19);
+            this.label13.Size = new System.Drawing.Size(20, 15);
             this.label13.TabIndex = 13;
             this.label13.Text = "🩸";
             // 
@@ -461,7 +461,7 @@
             this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.Location = new System.Drawing.Point(525, 192);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(131, 23);
+            this.label12.Size = new System.Drawing.Size(101, 17);
             this.label12.TabIndex = 12;
             this.label12.Text = "phone Number";
             // 
@@ -471,7 +471,7 @@
             this.label11.Font = new System.Drawing.Font("Segoe MDL2 Assets", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(503, 189);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(31, 20);
+            this.label11.Size = new System.Drawing.Size(24, 16);
             this.label11.TabIndex = 11;
             this.label11.Text = "📞";
             // 
@@ -495,7 +495,7 @@
             this.radioButton1.ForeColor = System.Drawing.Color.Black;
             this.radioButton1.Location = new System.Drawing.Point(6, 19);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(89, 27);
+            this.radioButton1.Size = new System.Drawing.Size(71, 23);
             this.radioButton1.TabIndex = 8;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Donor";
@@ -509,7 +509,7 @@
             this.label19.ForeColor = System.Drawing.Color.Gray;
             this.label19.Location = new System.Drawing.Point(18, 45);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(126, 18);
+            this.label19.Size = new System.Drawing.Size(102, 14);
             this.label19.TabIndex = 19;
             this.label19.Text = "I Want to donate blood";
             // 
@@ -519,7 +519,7 @@
             this.textBox3.Location = new System.Drawing.Point(506, 215);
             this.textBox3.MaxLength = 30;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(484, 29);
+            this.textBox3.Size = new System.Drawing.Size(484, 25);
             this.textBox3.TabIndex = 7;
             this.textBox3.MouseEnter += new System.EventHandler(this.textBox4_MouseEnter);
             this.textBox3.MouseLeave += new System.EventHandler(this.textBox4_MouseLeave);
@@ -531,7 +531,7 @@
             this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(31, 313);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(88, 23);
+            this.label10.Size = new System.Drawing.Size(68, 17);
             this.label10.TabIndex = 1;
             this.label10.Text = "User Type";
             // 
@@ -541,7 +541,7 @@
             this.label9.Font = new System.Drawing.Font("Segoe MDL2 Assets", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(10, 311);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(29, 19);
+            this.label9.Size = new System.Drawing.Size(23, 15);
             this.label9.TabIndex = 6;
             this.label9.Text = "👥";
             // 
@@ -551,7 +551,7 @@
             this.textBox2.Location = new System.Drawing.Point(10, 215);
             this.textBox2.MaxLength = 25;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(474, 29);
+            this.textBox2.Size = new System.Drawing.Size(474, 25);
             this.textBox2.TabIndex = 2;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             this.textBox2.MouseEnter += new System.EventHandler(this.textBox2_MouseEnter);
@@ -564,7 +564,7 @@
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(32, 252);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(42, 23);
+            this.label8.Size = new System.Drawing.Size(32, 17);
             this.label8.TabIndex = 4;
             this.label8.Text = "Age";
             // 
@@ -574,7 +574,7 @@
             this.label7.Font = new System.Drawing.Font("Segoe MDL2 Assets", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(9, 252);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(30, 20);
+            this.label7.Size = new System.Drawing.Size(23, 16);
             this.label7.TabIndex = 3;
             this.label7.Text = "📅";
             // 
@@ -584,7 +584,7 @@
             this.label5.Font = new System.Drawing.Font("Segoe MDL2 Assets", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(9, 190);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(29, 19);
+            this.label5.Size = new System.Drawing.Size(21, 15);
             this.label5.TabIndex = 0;
             this.label5.Text = "👤";
             // 
