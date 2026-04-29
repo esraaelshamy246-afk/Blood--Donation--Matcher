@@ -22,12 +22,11 @@ namespace Blood_Donation_Matcher
         {
 
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(textBox1.Text))
             {
-                MessageBox.Show("من فضلك ادخلي اسم المريض");
+                MessageBox.Show("Please enter the patient name");
                 return;
             }
 
@@ -37,21 +36,22 @@ namespace Blood_Donation_Matcher
             string phone = textBox2.Text;
             string bags = comboBox2.Text;
             string date = dateTimePicker1.Text;
-            string isUrgent = checkBox1.Checked ? "عاجلة" : "عادية";
-            string gender = radioButton1.Checked ? "ذكر" : "أنثى";
+            string isUrgent = checkBox1.Checked ? "Urgent" : "Normal";
+            string gender = radioButton1.Checked ? "Male" : "Female";
 
-            string message = $"تم تسجيل الطلب:\n" +
-                             $"المريض: {name}\n" +
-                             $"الفصيلة: {bloodType}\n" +
-                             $"السن: {age}\n" +
-                             $"النوع: {gender}\n" +
-                             $"الهاتف: {phone}\n" +
-                             $"عدد الأكياس: {bags}\n" +
-                             $"الحالة: {isUrgent}\n" +
-                             $"التاريخ: {date}";
+            string message = $@"Request Registered Successfully:
+----------------------------------
+Patient: {name}
+Blood Type: {bloodType}
+Age: {age}
+Gender: {gender}
+Phone: {phone}
+Required Units: {bags}
+Status: {isUrgent}
+Date: {date}";
 
-            MessageBox.Show(message, "نجاح العملية");
-
+            MessageBox.Show(message, "Success");
         }
     }
-}
+
+        }
