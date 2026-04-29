@@ -11,9 +11,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Blood_Donation_Matcher
 {
-    public partial class س : Form
+    public partial class BloodDonationForm : Form
     {
-        public س()
+        public BloodDonationForm()
         {
             InitializeComponent();
         }
@@ -40,15 +40,15 @@ namespace Blood_Donation_Matcher
             string gender = radioButton1.Checked ? "Male" : "Female";
 
             string message = $@"Request Registered Successfully:
-----------------------------------
-Patient: {name}
-Blood Type: {bloodType}
-Age: {age}
-Gender: {gender}
-Phone: {phone}
-Required Units: {bags}
-Status: {isUrgent}
-Date: {date}";
+
+           Patient: {name}
+           Blood Type: {bloodType}
+           Age: {age}
+           Gender: {gender}
+           Phone: {phone}
+           Required Units: {bags}
+           Status: {isUrgent}
+           Date: {date}";
 
             MessageBox.Show(message, "Success");
         }
