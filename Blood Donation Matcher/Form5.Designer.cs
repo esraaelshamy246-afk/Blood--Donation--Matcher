@@ -1,6 +1,6 @@
 ﻿namespace Blood_Donation_Matcher
 {
-    partial class BloodDonationForm
+    partial class form5
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BloodDonationForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form5));
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -251,6 +251,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.BackGColor = System.Drawing.SystemColors.ActiveBorder;
             this.groupBox1.BaseColor = System.Drawing.Color.Transparent;
@@ -275,7 +276,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
             this.groupBox1.HeaderColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(181, 46);
+            this.groupBox1.Location = new System.Drawing.Point(113, 38);
             this.groupBox1.MinimumSize = new System.Drawing.Size(136, 50);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(5, 28, 5, 5);
@@ -285,15 +286,15 @@
             this.groupBox1.Text = "Patient Info";
             this.groupBox1.Click += new System.EventHandler(this.groupBox1_Click);
             // 
-            // BloodDonationForm
+            // form5
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Maroon;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1281, 844);
+            this.ClientSize = new System.Drawing.Size(1147, 874);
             this.Controls.Add(this.groupBox1);
-            this.Name = "BloodDonationForm";
+            this.Name = "form5";
             this.Load += new System.EventHandler(this.RequestForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.groupBox1.ResumeLayout(false);

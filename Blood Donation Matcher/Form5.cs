@@ -11,9 +11,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Blood_Donation_Matcher
 {
-    public partial class BloodDonationForm : Form
+    public partial class form5 : Form
     {
-        public BloodDonationForm()
+        public form5()
         {
             InitializeComponent();
         }

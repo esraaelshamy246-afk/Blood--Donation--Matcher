@@ -97,7 +97,7 @@ namespace Blood_Donation_Matcher
 
         private void btnRequest_Click(object sender, EventArgs e)
         {
-            LoadForm(new BloodDonationForm());
+            LoadForm(new form5());
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
