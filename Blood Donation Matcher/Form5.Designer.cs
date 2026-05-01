@@ -294,7 +294,6 @@
             this.ClientSize = new System.Drawing.Size(1281, 844);
             this.Controls.Add(this.groupBox1);
             this.Name = "BloodDonationForm";
-            this.Text = "Requestation";
             this.Load += new System.EventHandler(this.RequestForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.groupBox1.ResumeLayout(false);
