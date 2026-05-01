@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BloodDonatoinMatcher
 {
-    public partial class StoriesForm : Form
+    public partial class DonorForm : Form
     {
-        public StoriesForm()
+        public DonorForm()
         {
             InitializeComponent();
         }
