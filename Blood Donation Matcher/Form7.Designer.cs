@@ -1,4 +1,4 @@
-﻿namespace Blood_Donation_Matcher
+﻿namespace Blood_Donation_Matcher 
 {
     partial class HomeContentForm
     {
@@ -46,11 +46,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.rowTop = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -61,18 +61,18 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label26 = new System.Windows.Forms.Label();
             this.flowMain.SuspendLayout();
@@ -91,9 +91,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.panel5.SuspendLayout();
             this.panel8.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -298,6 +298,16 @@
             this.panel7.Size = new System.Drawing.Size(618, 221);
             this.panel7.TabIndex = 1;
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(14, 29);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(189, 154);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 0;
+            this.pictureBox8.TabStop = false;
+            // 
             // label25
             // 
             this.label25.AutoSize = true;
@@ -337,16 +347,6 @@
             this.label22.Size = new System.Drawing.Size(227, 28);
             this.label22.TabIndex = 1;
             this.label22.Text = " 💬 Make a Difference";
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(14, 29);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(189, 154);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 0;
-            this.pictureBox8.TabStop = false;
             // 
             // panel1
             // 
@@ -458,60 +458,15 @@
             this.label18.TabIndex = 0;
             this.label18.Text = "💰 Financial Support";
             // 
-            // panel5
+            // label9
             // 
-            this.panel5.BackColor = System.Drawing.Color.Honeydew;
-            this.panel5.Controls.Add(this.label17);
-            this.panel5.Controls.Add(this.label16);
-            this.panel5.Controls.Add(this.label15);
-            this.panel5.Controls.Add(this.label14);
-            this.panel5.Location = new System.Drawing.Point(486, 57);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(427, 280);
-            this.panel5.TabIndex = 2;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(23, 136);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(239, 115);
-            this.label17.TabIndex = 3;
-            this.label17.Text = "*Benefits:*\n\n* Convenient and time-saving\n* Suitable if you can’t travel\n* Comfor" +
-    "table and flexible\n";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(63, 83);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(239, 23);
-            this.label16.TabIndex = 2;
-            this.label16.Text = "your location to collect blood.\n";
-            this.label16.Click += new System.EventHandler(this.label16_Click);
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(68, 60);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(234, 23);
-            this.label15.TabIndex = 1;
-            this.label15.Text = "A medical team can come to ";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(33, 24);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(250, 28);
-            this.label14.TabIndex = 0;
-            this.label14.Text = " 🏠 Home Visit Donation";
-            this.label14.Click += new System.EventHandler(this.label14_Click);
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(572, 16);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(298, 38);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "🩸 Donation Options";
             // 
             // panel4
             // 
@@ -579,15 +534,60 @@
             this.label10.Text = "Hospital Donation";
             this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
-            // label9
+            // panel5
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(572, 16);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(298, 38);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "🩸 Donation Options";
+            this.panel5.BackColor = System.Drawing.Color.Honeydew;
+            this.panel5.Controls.Add(this.label17);
+            this.panel5.Controls.Add(this.label16);
+            this.panel5.Controls.Add(this.label15);
+            this.panel5.Controls.Add(this.label14);
+            this.panel5.Location = new System.Drawing.Point(486, 57);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(427, 280);
+            this.panel5.TabIndex = 2;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(23, 136);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(239, 115);
+            this.label17.TabIndex = 3;
+            this.label17.Text = "*Benefits:*\n\n* Convenient and time-saving\n* Suitable if you can’t travel\n* Comfor" +
+    "table and flexible\n";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(63, 83);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(239, 23);
+            this.label16.TabIndex = 2;
+            this.label16.Text = "your location to collect blood.\n";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(68, 60);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(234, 23);
+            this.label15.TabIndex = 1;
+            this.label15.Text = "A medical team can come to ";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(33, 24);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(250, 28);
+            this.label14.TabIndex = 0;
+            this.label14.Text = " 🏠 Home Visit Donation";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // panel8
             // 
@@ -627,7 +627,7 @@
             this.MaximizeBox = false;
             this.Name = "HomeContentForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "  Home Page";
+            this.Text = " ";
             this.flowMain.ResumeLayout(false);
             this.rowBlood.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -650,11 +650,11 @@
             this.panel3.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.ResumeLayout(false);

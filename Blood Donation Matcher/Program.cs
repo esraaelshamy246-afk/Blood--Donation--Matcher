@@ -13,7 +13,7 @@ namespace Blood_Donation_Matcher
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BloodDonationForm());
+            Application.Run(new form1 ());
         }
     }
 }

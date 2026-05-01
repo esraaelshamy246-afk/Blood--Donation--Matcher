@@ -1,6 +1,6 @@
 ﻿namespace BloodDonatoinMatcher
 {
-    partial class StoriesForm
+    partial class RequestForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // StoriesForm
+            // RequestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "StoriesForm";
-            this.Text = "Stories Page";
+            this.Name = "RequestForm";
+            this.Text = "Request Page";
             this.ResumeLayout(false);
 
         }

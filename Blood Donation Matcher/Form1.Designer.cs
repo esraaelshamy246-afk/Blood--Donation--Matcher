@@ -31,21 +31,21 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form1));
             this.Panel1 = new System.Windows.Forms.Panel();
+            this.pictureBoxMenu = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panelMenu = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnHome = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
             this.btnDonate = new System.Windows.Forms.Button();
             this.btnRequest = new System.Windows.Forms.Button();
             this.btnHospitals = new System.Windows.Forms.Button();
             this.btnFeedback = new System.Windows.Forms.Button();
-            this.timerMenu = new System.Windows.Forms.Timer(this.components);
             this.btnEligibilitycheck = new System.Windows.Forms.Button();
+            this.timerMenu = new System.Windows.Forms.Timer(this.components);
             this.maincontentPanel = new System.Windows.Forms.Panel();
-            this.btnHome = new System.Windows.Forms.Button();
-            this.pictureBoxMenu = new System.Windows.Forms.PictureBox();
             this.Panel1.SuspendLayout();
-            this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMenu)).BeginInit();
+            this.panelMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // Panel1
@@ -62,6 +62,18 @@
             this.Panel1.Size = new System.Drawing.Size(916, 62);
             this.Panel1.TabIndex = 0;
             // 
+            // pictureBoxMenu
+            // 
+            this.pictureBoxMenu.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxMenu.Image")));
+            this.pictureBoxMenu.Location = new System.Drawing.Point(12, 4);
+            this.pictureBoxMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBoxMenu.Name = "pictureBoxMenu";
+            this.pictureBoxMenu.Size = new System.Drawing.Size(64, 56);
+            this.pictureBoxMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxMenu.TabIndex = 1;
+            this.pictureBoxMenu.TabStop = false;
+            this.pictureBoxMenu.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -70,7 +82,7 @@
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label1.Location = new System.Drawing.Point(82, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(378, 38);
+            this.label1.Size = new System.Drawing.Size(368, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "Blood Donation Matcher";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -91,11 +103,27 @@
             this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Padding = new System.Windows.Forms.Padding(15, 30, 0, 0);
-            this.panelMenu.Size = new System.Drawing.Size(185, 462);
+            this.panelMenu.Size = new System.Drawing.Size(201, 462);
             this.panelMenu.TabIndex = 1;
             this.panelMenu.Visible = false;
             this.panelMenu.WrapContents = false;
             this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
+            // 
+            // btnHome
+            // 
+            this.btnHome.BackColor = System.Drawing.Color.White;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.Color.Black;
+            this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
+            this.btnHome.Location = new System.Drawing.Point(15, 40);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(0, 10, 0, 10);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(170, 39);
+            this.btnHome.TabIndex = 5;
+            this.btnHome.Text = "Home";
+            this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // btnRegister
             // 
@@ -172,11 +200,6 @@
             this.btnFeedback.UseVisualStyleBackColor = false;
             this.btnFeedback.Click += new System.EventHandler(this.btnFeedback_Click);
             // 
-            // timerMenu
-            // 
-            this.timerMenu.Interval = 35;
-            this.timerMenu.Tick += new System.EventHandler(this.timerMenu_Tick);
-            // 
             // btnEligibilitycheck
             // 
             this.btnEligibilitycheck.BackColor = System.Drawing.Color.White;
@@ -192,43 +215,20 @@
             this.btnEligibilitycheck.UseVisualStyleBackColor = false;
             this.btnEligibilitycheck.Click += new System.EventHandler(this.btnEligibilitycheck_Click);
             // 
+            // timerMenu
+            // 
+            this.timerMenu.Interval = 35;
+            this.timerMenu.Tick += new System.EventHandler(this.timerMenu_Tick);
+            // 
             // maincontentPanel
             // 
             this.maincontentPanel.BackgroundImage = global::Blood_Donation_Matcher.Properties.Resources.WhatsApp_Image_2026_04_25_at_3_45_47_PM;
             this.maincontentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.maincontentPanel.Location = new System.Drawing.Point(185, 62);
+            this.maincontentPanel.Location = new System.Drawing.Point(201, 62);
             this.maincontentPanel.Name = "maincontentPanel";
-            this.maincontentPanel.Size = new System.Drawing.Size(731, 462);
+            this.maincontentPanel.Size = new System.Drawing.Size(715, 462);
             this.maincontentPanel.TabIndex = 2;
             this.maincontentPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.maincontentPanel_Paint);
-            // 
-            // btnHome
-            // 
-            this.btnHome.BackColor = System.Drawing.Color.White;
-            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.Black;
-            this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
-            this.btnHome.Location = new System.Drawing.Point(15, 40);
-            this.btnHome.Margin = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(170, 39);
-            this.btnHome.TabIndex = 5;
-            this.btnHome.Text = "Home";
-            this.btnHome.UseVisualStyleBackColor = false;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
-            // pictureBoxMenu
-            // 
-            this.pictureBoxMenu.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxMenu.Image")));
-            this.pictureBoxMenu.Location = new System.Drawing.Point(12, 4);
-            this.pictureBoxMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBoxMenu.Name = "pictureBoxMenu";
-            this.pictureBoxMenu.Size = new System.Drawing.Size(64, 56);
-            this.pictureBoxMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxMenu.TabIndex = 1;
-            this.pictureBoxMenu.TabStop = false;
-            this.pictureBoxMenu.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // form1
             // 
@@ -247,8 +247,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Panel1.ResumeLayout(false);
             this.Panel1.PerformLayout();
-            this.panelMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMenu)).EndInit();
+            this.panelMenu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
