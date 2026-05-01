@@ -52,6 +52,16 @@ namespace Blood_Donation_Matcher
 
             MessageBox.Show(message, "Success");
         }
+
+        private void groupBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
         }
