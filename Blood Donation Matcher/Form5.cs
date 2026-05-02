@@ -15,7 +15,9 @@ namespace Blood_Donation_Matcher
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(textBox1.Text))
+            if (string.IsNullOrWhiteSpace(textBox1.Text) || string.IsNullOrWhiteSpace(textBox2.Text) || string.IsNullOrWhiteSpace(textBox3.Text)
+                || string.IsNullOrWhiteSpace(comboBox1.Text) || string.IsNullOrWhiteSpace(comboBox3.Text) ||
+                string.IsNullOrWhiteSpace(numericUpDown1.Text) || string.IsNullOrWhiteSpace(numericUpDown2.Text))
             {
                 MessageBox.Show("Please enter the patient name");
                 return;

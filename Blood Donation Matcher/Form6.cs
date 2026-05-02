@@ -111,10 +111,21 @@ namespace Blood_Donation_Matcher
                 }
 
 
+                textBox2.Clear();
+                textBox3.Clear();
+                textBox5.Clear();
+                textBox6.Clear();
+                comboBox1.Items.Clear();
+                comboBox2.Items.Clear();
+                numericUpDown1.Value = 18;
+
 
 
             }
         }
+
+
+        
         
 
         private void button3_Click(object sender, EventArgs e)
@@ -143,7 +154,7 @@ namespace Blood_Donation_Matcher
 
         private void RegisterForm_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)

@@ -1,4 +1,4 @@
-﻿namespace Blood_Donation_Matcher 
+﻿namespace Blood_Donation_Matcher
 {
     partial class HomeContentForm
     {
@@ -16,11 +16,9 @@
             if (disposing && (components != null))
             {
                 components.Dispose();
+                InitializeComponent();
             }
-            base.Dispose(disposing);
         }
-
-        #region Windows Form Designer generated code
 
         /// <summary>
         /// Required method for Designer support - do not modify
@@ -627,7 +625,7 @@
             this.MaximizeBox = false;
             this.Name = "HomeContentForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = " ";
+            this.Text = " Home";
             this.flowMain.ResumeLayout(false);
             this.rowBlood.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -661,8 +659,6 @@
             this.PerformLayout();
 
         }
-
-        #endregion
 
         private System.Windows.Forms.FlowLayoutPanel flowMain;
         private System.Windows.Forms.Panel cardBlood;
