@@ -89,7 +89,7 @@
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Location = new System.Drawing.Point(147, 62);
+            this.panel1.Location = new System.Drawing.Point(202, 69);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(902, 655);
             this.panel1.TabIndex = 25;
