@@ -10,7 +10,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using static Person;
-using static Person.Patient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
+
 
 namespace Blood_Donation_Matcher
 {
@@ -98,7 +100,7 @@ namespace Blood_Donation_Matcher
                     }
 
                     
-                    using (StreamWriter sw = new StreamWriter("UsersData.txt", true)) 
+                    using (StreamWriter sw = new StreamWriter("UsersData.txt", true))
                     {
                         sw.WriteLine(record);
                     }
@@ -111,22 +113,11 @@ namespace Blood_Donation_Matcher
                 }
 
 
-                textBox2.Clear();
-                textBox3.Clear();
-                textBox5.Clear();
-                textBox6.Clear();
-                comboBox1.Items.Clear();
-                comboBox2.Items.Clear();
-                numericUpDown1.Value = 18;
-
-
+                MessageBox.Show(info, "نجاح", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
         }
 
-
-        
-        
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -154,7 +145,7 @@ namespace Blood_Donation_Matcher
 
         private void RegisterForm_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -254,7 +245,7 @@ namespace Blood_Donation_Matcher
 }
 
 
-
+//class person 
 public class Person
 {
     public string Name;
@@ -273,29 +264,7 @@ public class Person
         this.bloodType = bloodType;
         this.City = city;
     }
-
-
-
-
-    public class Donor : Person
-    {
-        public Donor(string name, string phone, int age, string address, BloodType bloodType, string city )
-            : base(name, phone, age, address, bloodType, city)
-        {
-
-        }
-
-    }
-
-    public class Patient : Person
-    {
-        public Patient(string name, string phone, int age, string address, BloodType bloodType,string city)
-            : base(name, phone, age, address, bloodType, city)
-        {
-
-        }
-
-
+        //enum  
         public enum BloodType
         {
             A_Positive,
@@ -306,23 +275,7 @@ public class Person
             AB_Negative,
             O_Positive,
             O_Negative
-        }
-
-
-        public class PersonManager
-        {
-            private Person[] people = new Person[100];
-            private int count = 0;
-
-
-            public void AddPerson()
-            {
-                if (count < 100)
-                    count++;
-            }
-
-        }
-    }
+        } 
 }
 
         
