@@ -88,17 +88,17 @@ namespace Blood_Donation_Matcher
                     if (radioButton1.Checked) 
                     {
                         
-                        Donor d = new Donor(name, phone, int.Parse(age), address, bType, city  );
+                        Donor d = new Donor(name, phone, int.Parse(age), address,(Person.Patient.BloodType ) bType, city  );
                         record = "Donor|" + d.Name + "|" + d.Phone + "|" + d.Age + "|" + d.Address + "|" + d.City + "|" + d.bloodType;
                     }
                     else if (radioButton2.Checked) 
                     {
-                        Patient p = new Patient(name, phone, int.Parse(age), address, bType, city );
+                        Patient p = new Patient(name, phone, int.Parse(age), address,(Person.Patient.BloodType ) bType, city );
                         record = "Patient|" + p.Name + "|" + p.Phone + "|" + p.Age + "|" + p.Address + "|" + p.City + "|" + p.bloodType;
                     }
 
                     
-                    using (StreamWriter sw = new StreamWriter("UsersData.txt", true))
+                    using (StreamWriter sw = new StreamWriter("UsersData.txt", true)) 
                     {
                         sw.WriteLine(record);
                     }
