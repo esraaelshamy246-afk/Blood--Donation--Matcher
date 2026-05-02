@@ -96,7 +96,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(388, 613);
+            this.button1.Location = new System.Drawing.Point(352, 613);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(168, 32);
             this.button1.TabIndex = 4;
@@ -280,7 +280,7 @@
             this.groupBox1.MinimumSize = new System.Drawing.Size(136, 50);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(5, 28, 5, 5);
-            this.groupBox1.Size = new System.Drawing.Size(934, 733);
+            this.groupBox1.Size = new System.Drawing.Size(871, 679);
             this.groupBox1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.None;
             this.groupBox1.TabIndex = 16;
             this.groupBox1.Text = "Patient Info";
