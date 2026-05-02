@@ -90,13 +90,13 @@ namespace Blood_Donation_Matcher
                     if (radioButton1.Checked) 
                     {
                         
-                        Donor d = new Donor(name, phone, int.Parse(age), address,(Person.Patient.BloodType ) bType, city  );
-                        record = "Donor|" + d.Name + "|" + d.Phone + "|" + d.Age + "|" + d.Address + "|" + d.City + "|" + d.bloodType;
+                        //Donor d = new Donor(name, phone, int.Parse(age), address,(Person.Patient.BloodType ) bType, city  );
+                        //record = "Donor|" + d.Name + "|" + d.Phone + "|" + d.Age + "|" + d.Address + "|" + d.City + "|" + d.bloodType;
                     }
                     else if (radioButton2.Checked) 
                     {
-                        Patient p = new Patient(name, phone, int.Parse(age), address,(Person.Patient.BloodType ) bType, city );
-                        record = "Patient|" + p.Name + "|" + p.Phone + "|" + p.Age + "|" + p.Address + "|" + p.City + "|" + p.bloodType;
+                        //Patient p = new Patient(name, phone, int.Parse(age), address,(Person.Patient.BloodType ) bType, city );
+                        //record = "Patient|" + p.Name + "|" + p.Phone + "|" + p.Age + "|" + p.Address + "|" + p.City + "|" + p.bloodType;
                     }
 
                     
@@ -113,7 +113,7 @@ namespace Blood_Donation_Matcher
                 }
 
 
-                MessageBox.Show(info, "نجاح", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //MessageBox.Show(info, "نجاح", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
         }
