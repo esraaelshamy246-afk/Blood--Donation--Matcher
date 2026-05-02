@@ -133,6 +133,26 @@ namespace Blood_Donation_Matcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap photo_2026_05_01_15_12_20 {
+            get {
+                object obj = ResourceManager.GetObject("photo_2026-05-01_15-12-20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap photo_2026_05_01_15_12_201 {
+            get {
+                object obj = ResourceManager.GetObject("photo_2026-05-01_15-12-201", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap WhatsApp_Image_2026_04_25_at_2_04_52_PM {
             get {
                 object obj = ResourceManager.GetObject("WhatsApp Image 2026-04-25 at 2.04.52 PM", resourceCulture);

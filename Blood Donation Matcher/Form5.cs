@@ -11,20 +11,25 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Blood_Donation_Matcher
 {
-    public partial class BloodDonationForm : Form
+    public partial class form5 : Form
     {
-        public BloodDonationForm()
+        public form5()
         {
             InitializeComponent();
         }
 
         private void RequestForm_Load(object sender, EventArgs e)
         {
-
+            panel1.BackColor = Color.FromArgb(100, 0, 0, 0);
         }
-        private void button1_Click(object sender, EventArgs e)
+       
+  
+
+        private void button1_Click_1(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(textBox1.Text))
+            if (string.IsNullOrWhiteSpace(textBox1.Text) || string.IsNullOrWhiteSpace(textBox2.Text) || string.IsNullOrWhiteSpace(textBox3.Text)
+                || string.IsNullOrWhiteSpace(comboBox1.Text) || string.IsNullOrWhiteSpace(comboBox3.Text) ||
+                string.IsNullOrWhiteSpace(numericUpDown1.Text) || string.IsNullOrWhiteSpace(numericUpDown2.Text))
             {
                 MessageBox.Show("Please enter the patient name");
                 return;
@@ -34,10 +39,10 @@ namespace Blood_Donation_Matcher
             string bloodType = comboBox1.Text;
             string age = numericUpDown1.Value.ToString();
             string phone = textBox2.Text;
-            string bags = comboBox2.Text;
+            string bags = numericUpDown2.Text;
             string date = dateTimePicker1.Text;
-            string isUrgent = checkBox1.Checked ? "Urgent" : "Normal";
-            string gender = radioButton1.Checked ? "Male" : "Female";
+            string isUrgent = checkBox3.Checked ? "Emergency Case" : "Normal Case";
+            string gender = checkBox1.Checked ? "Male" : "Female";
 
             string message = $@"Request Registered Successfully:
 
