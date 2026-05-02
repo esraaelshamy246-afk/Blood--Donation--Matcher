@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Blood_Donation_Matcher
@@ -18,7 +11,7 @@ namespace Blood_Donation_Matcher
             this.DoubleBuffered = true;
             foreach (Control control in this.Controls)
             {
-                if(control is Panel || control is FlowLayoutPanel)
+                if (control is Panel || control is FlowLayoutPanel)
                 {
                     var property = control.GetType().GetProperty("DoubleBuffered", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
                     property.SetValue(control, true, null);
@@ -53,8 +46,8 @@ namespace Blood_Donation_Matcher
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            panelMenu.Visible =! panelMenu.Visible;
-            timerMenu .Start();
+            panelMenu.Visible = !panelMenu.Visible;
+            timerMenu.Start();
         }
         bool isMenuOpen = false;
 
@@ -102,12 +95,12 @@ namespace Blood_Donation_Matcher
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-             LoadForm(new RegisterForm());
+            LoadForm(new RegisterForm());
         }
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-             LoadForm(new HomeContentForm());
+            LoadForm(new HomeContentForm());
         }
 
         private void contentPanel_Paint(object sender, PaintEventArgs e)
@@ -117,7 +110,7 @@ namespace Blood_Donation_Matcher
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           LoadForm(new HomeContentForm());
+            LoadForm(new HomeContentForm());
         }
 
         private void maincontentPanel_Paint(object sender, PaintEventArgs e)
@@ -125,6 +118,6 @@ namespace Blood_Donation_Matcher
 
         }
 
-       
+
     }
 }
