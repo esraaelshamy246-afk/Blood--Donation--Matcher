@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -53,32 +54,32 @@ namespace Blood_Donation_Matcher
 
         private void textBox1_MouseEnter(object sender, EventArgs e)
         {
-            textBox1.BackColor = Color.LightGray;
+            txtName.BackColor = Color.LightGray;
         }
 
         private void textBox1_MouseLeave(object sender, EventArgs e)
         {
-            textBox1.BackColor = Color.White;
+            txtName.BackColor = Color.White;
         }
 
         private void textBox2_MouseEnter(object sender, EventArgs e)
         {
-            textBox2.BackColor = Color.LightGray;
+            txtAddress.BackColor = Color.LightGray;
         }
 
         private void textBox2_MouseLeave(object sender, EventArgs e)
         {
-            textBox2.BackColor = Color.White;
+            txtAddress.BackColor = Color.White;
         }
 
         private void maskedTextBox1_MouseEnter(object sender, EventArgs e)
         {
-            maskedTextBox1.BackColor = Color.LightGray;
+            txtPhone.BackColor = Color.LightGray;
         }
 
         private void maskedTextBox1_MouseLeave(object sender, EventArgs e)
         {
-            maskedTextBox1.BackColor = Color.White;
+            txtPhone.BackColor = Color.White;
         }
 
         private void dateTimePicker1_MouseEnter(object sender, EventArgs e)
@@ -114,14 +115,48 @@ namespace Blood_Donation_Matcher
         private void button1_Click(object sender, EventArgs e)
         {
 
-            MessageBox.Show("Your request has been submitted successfully!", // نص الرسالة الرئيسي
-                    "THANK YOU FOR YOUR DONATION"); // عنوان الرسالة العلوي
-         
+            // التحقق إذا كانت الحقول فارغة
+            if (string.IsNullOrWhiteSpace(txtName.Text) ||
+                string.IsNullOrWhiteSpace(txtAddress.Text) ||
+                string.IsNullOrWhiteSpace(txtPhone.Text))
+            {
+                // إظهار رسالة تنبيه للمستخدم
+                MessageBox.Show("Please fill in all the fields first.", "Missing Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (dateTimePicker1.Value.Date < DateTime.Today)
+            {
+                MessageBox.Show("Please select a valid future date for blood pickup.", "Invalid Date", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return; // التوقف عن التنفيذ
+            }
+                // إذا وصل الكود هنا، يعني أن كل البيانات صحيحة
+                MessageBox.Show("Your request has been booked successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show($"Your generous donation has been received","THANK YOY FOR YOUR DONATION");
+           
+            // التأكد من اختيار طريقة الدفع
+            if (!rbFawry.Checked && !rbCreditCard.Checked && !rbCreditCard.Checked)
+            {
+                // إظهار رسالة تنبيه لو مفيش حاجة اتخارت
+                MessageBox.Show("Please select a payment method first.", "Payment Method Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                // لو اختار فعلاً، بنكمل العملية
+                string selectedMethod = "";
+
+                if (rbFawry.Checked) selectedMethod = "Fawry";
+                else if (rbCreditCard.Checked) selectedMethod = "Mobile Wallet";
+                else if (rbCreditCard.Checked) selectedMethod = "Credit Card";
+
+                MessageBox.Show($"Your generous donation has been received", "THANK YOY FOR YOUR DONATION", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        
+       
         }
     }
     }
