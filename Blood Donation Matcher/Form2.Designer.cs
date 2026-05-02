@@ -366,19 +366,19 @@
             // 
             this.panel3.BackgroundImage = global::Blood_Donation_Matcher.Properties.Resources.WhatsApp_Image_2026_04_25_at_2_54_31_PM__10_;
             this.panel3.Controls.Add(this.label6);
-            this.panel3.Location = new System.Drawing.Point(496, 12);
+            this.panel3.Location = new System.Drawing.Point(344, 12);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(825, 77);
+            this.panel3.Size = new System.Drawing.Size(1000, 77);
             this.panel3.TabIndex = 1;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Snow;
-            this.label6.Location = new System.Drawing.Point(102, 16);
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(126, 11);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(596, 37);
+            this.label6.Size = new System.Drawing.Size(713, 45);
             this.label6.TabIndex = 0;
             this.label6.Text = "You\'re not just a donor, you\'re a lifesaver";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -516,7 +516,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1520, 729);
             this.Controls.Add(this.panel1);
-           
+            
             this.Text = "Donate";
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);

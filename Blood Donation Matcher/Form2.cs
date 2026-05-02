@@ -131,7 +131,20 @@ namespace Blood_Donation_Matcher
             }
                 // إذا وصل الكود هنا، يعني أن كل البيانات صحيحة
                 MessageBox.Show("Your request has been booked successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            
+        
+            string data = "Name: " + txtName.Text + " | Address: " + txtAddress.Text + " | Phone: " + txtPhone.Text + " | Date: " + dateTimePicker1.Value.ToShortDateString();
+
+            // 3. كود الـ File Handling (الحفظ في ملف نصي)
+            // السطر ده وظيفته يفتح الملف (أو ينشئه لو مش موجود) ويضيف السطر الجديد في آخره
+            File.AppendAllText("DonorsData.txt", data + Environment.NewLine);
+
+            // 4. إظهار رسالة النجاح بعد الحفظ الفعلي
+            MessageBox.Show("Data saved successfully to the file!");
+
+            // 5. اختياري: مسح الخانات لتجهيزها لمستخدم جديد
+            txtName.Clear();
+            txtAddress.Clear();
+            txtPhone.Clear();
 
         }
 
