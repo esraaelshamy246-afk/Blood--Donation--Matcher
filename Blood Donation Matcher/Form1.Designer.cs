@@ -94,8 +94,8 @@
             this.panelMenu.Controls.Add(this.btnRegister);
             this.panelMenu.Controls.Add(this.btnDonate);
             this.panelMenu.Controls.Add(this.btnRequest);
-            this.panelMenu.Controls.Add(this.btnHospitals);
             this.panelMenu.Controls.Add(this.btnFeedback);
+            this.panelMenu.Controls.Add(this.btnHospitals);
             this.panelMenu.Controls.Add(this.btnEligibilitycheck);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
@@ -176,7 +176,7 @@
             this.btnHospitals.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHospitals.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHospitals.ForeColor = System.Drawing.Color.Black;
-            this.btnHospitals.Location = new System.Drawing.Point(15, 276);
+            this.btnHospitals.Location = new System.Drawing.Point(15, 335);
             this.btnHospitals.Margin = new System.Windows.Forms.Padding(0, 10, 0, 10);
             this.btnHospitals.Name = "btnHospitals";
             this.btnHospitals.Size = new System.Drawing.Size(170, 39);
@@ -191,7 +191,7 @@
             this.btnFeedback.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFeedback.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFeedback.ForeColor = System.Drawing.Color.Black;
-            this.btnFeedback.Location = new System.Drawing.Point(15, 335);
+            this.btnFeedback.Location = new System.Drawing.Point(15, 276);
             this.btnFeedback.Margin = new System.Windows.Forms.Padding(0, 10, 0, 10);
             this.btnFeedback.Name = "btnFeedback";
             this.btnFeedback.Size = new System.Drawing.Size(170, 39);

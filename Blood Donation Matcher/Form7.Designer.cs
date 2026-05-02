@@ -627,7 +627,7 @@
             this.MaximizeBox = false;
             this.Name = "HomeContentForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = " ";
+            this.Text = " Home";
             this.flowMain.ResumeLayout(false);
             this.rowBlood.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
