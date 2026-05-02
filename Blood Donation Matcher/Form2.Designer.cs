@@ -35,26 +35,28 @@
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label14 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rbMobile = new System.Windows.Forms.RadioButton();
+            this.rbCreditCard = new System.Windows.Forms.RadioButton();
+            this.rbFawry = new System.Windows.Forms.RadioButton();
             this.label13 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.Book = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPhone = new System.Windows.Forms.MaskedTextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
             this.Address = new System.Windows.Forms.Label();
             this.Phone = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.Name = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.button3 = new System.Windows.Forms.Button();
             this.comboBoxGovernorates = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -93,23 +95,23 @@
             this.panel4.Controls.Add(this.numericUpDown1);
             this.panel4.Controls.Add(this.label14);
             this.panel4.Controls.Add(this.label12);
-            this.panel4.Controls.Add(this.radioButton3);
-            this.panel4.Controls.Add(this.radioButton2);
-            this.panel4.Controls.Add(this.radioButton1);
+            this.panel4.Controls.Add(this.rbMobile);
+            this.panel4.Controls.Add(this.rbCreditCard);
+            this.panel4.Controls.Add(this.rbFawry);
             this.panel4.Controls.Add(this.label13);
             this.panel4.Controls.Add(this.label2);
             this.panel4.Location = new System.Drawing.Point(1208, 200);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(462, 401);
+            this.panel4.Size = new System.Drawing.Size(491, 526);
             this.panel4.TabIndex = 1;
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Crimson;
-            this.button2.Location = new System.Drawing.Point(121, 315);
+            this.button2.Location = new System.Drawing.Point(142, 379);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(223, 32);
+            this.button2.Size = new System.Drawing.Size(246, 32);
             this.button2.TabIndex = 11;
             this.button2.Text = "Proceed to Payment";
             this.button2.UseVisualStyleBackColor = true;
@@ -119,13 +121,13 @@
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Segoe UI Symbol", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericUpDown1.Increment = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            this.numericUpDown1.Location = new System.Drawing.Point(224, 150);
+            this.numericUpDown1.Location = new System.Drawing.Point(267, 195);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             6000,
             0,
@@ -137,7 +139,7 @@
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(166, 25);
+            this.numericUpDown1.Size = new System.Drawing.Size(152, 28);
             this.numericUpDown1.TabIndex = 10;
             this.numericUpDown1.Value = new decimal(new int[] {
             50,
@@ -148,76 +150,77 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Rockwell Nova", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(61, 150);
+            this.label14.Font = new System.Drawing.Font("Rockwell Nova", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(66, 198);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(138, 21);
+            this.label14.Size = new System.Drawing.Size(145, 23);
             this.label14.TabIndex = 9;
             this.label14.Text = "Select Amount";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Rockwell Nova", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(58, 186);
+            this.label12.Font = new System.Drawing.Font("Rockwell Nova", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(63, 244);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(237, 21);
+            this.label12.Size = new System.Drawing.Size(249, 23);
             this.label12.TabIndex = 8;
             this.label12.Text = " Select Payment Method :";
             // 
-            // radioButton3
+            // rbMobile
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(62, 245);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(137, 23);
-            this.radioButton3.TabIndex = 7;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Mobile Wallet";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rbMobile.AutoSize = true;
+            this.rbMobile.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbMobile.Location = new System.Drawing.Point(70, 304);
+            this.rbMobile.Name = "rbMobile";
+            this.rbMobile.Size = new System.Drawing.Size(139, 24);
+            this.rbMobile.TabIndex = 7;
+            this.rbMobile.TabStop = true;
+            this.rbMobile.Text = "Mobile Wallet";
+            this.rbMobile.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rbCreditCard
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(62, 274);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(120, 23);
-            this.radioButton2.TabIndex = 6;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Credit Card";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbCreditCard.AutoSize = true;
+            this.rbCreditCard.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbCreditCard.Location = new System.Drawing.Point(70, 334);
+            this.rbCreditCard.Name = "rbCreditCard";
+            this.rbCreditCard.Size = new System.Drawing.Size(123, 24);
+            this.rbCreditCard.TabIndex = 6;
+            this.rbCreditCard.TabStop = true;
+            this.rbCreditCard.Text = "Credit Card";
+            this.rbCreditCard.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rbFawry
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(62, 216);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(78, 23);
-            this.radioButton1.TabIndex = 5;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Fawry";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbFawry.AutoSize = true;
+            this.rbFawry.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbFawry.Location = new System.Drawing.Point(70, 274);
+            this.rbFawry.Name = "rbFawry";
+            this.rbFawry.Size = new System.Drawing.Size(77, 24);
+            this.rbFawry.TabIndex = 5;
+            this.rbFawry.TabStop = true;
+            this.rbFawry.Text = "Fawry";
+            this.rbFawry.UseVisualStyleBackColor = true;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(48, 90);
+            this.label13.Font = new System.Drawing.Font("Microsoft Tai Le", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Maroon;
+            this.label13.Location = new System.Drawing.Point(53, 114);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(332, 44);
+            this.label13.Size = new System.Drawing.Size(348, 46);
             this.label13.TabIndex = 4;
             this.label13.Text = "-> Support patients by donating money\r\n to help cover blood and medical costs.";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(147, 35);
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(166, 52);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(161, 25);
+            this.label2.Size = new System.Drawing.Size(188, 32);
             this.label2.TabIndex = 1;
             this.label2.Text = "Donate Money";
             // 
@@ -229,26 +232,26 @@
             this.panel5.Controls.Add(this.button1);
             this.panel5.Controls.Add(this.dateTimePicker1);
             this.panel5.Controls.Add(this.Book);
-            this.panel5.Controls.Add(this.maskedTextBox1);
-            this.panel5.Controls.Add(this.textBox2);
+            this.panel5.Controls.Add(this.txtPhone);
+            this.panel5.Controls.Add(this.txtAddress);
             this.panel5.Controls.Add(this.Address);
             this.panel5.Controls.Add(this.Phone);
-            this.panel5.Controls.Add(this.textBox1);
+            this.panel5.Controls.Add(this.txtName);
             this.panel5.Controls.Add(this.Name);
             this.panel5.Controls.Add(this.label7);
             this.panel5.Controls.Add(this.label3);
             this.panel5.Location = new System.Drawing.Point(643, 200);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(459, 401);
+            this.panel5.Size = new System.Drawing.Size(488, 526);
             this.panel5.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Crimson;
-            this.button1.Location = new System.Drawing.Point(176, 325);
+            this.button1.Location = new System.Drawing.Point(195, 415);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 32);
+            this.button1.Size = new System.Drawing.Size(116, 32);
             this.button1.TabIndex = 11;
             this.button1.Text = "Sumbit";
             this.button1.UseVisualStyleBackColor = true;
@@ -259,10 +262,10 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(125, 284);
+            this.dateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(189, 366);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 25);
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 28);
             this.dateTimePicker1.TabIndex = 2;
             this.dateTimePicker1.MouseEnter += new System.EventHandler(this.dateTimePicker1_MouseEnter);
             this.dateTimePicker1.MouseLeave += new System.EventHandler(this.dateTimePicker1_MouseLeave);
@@ -270,91 +273,92 @@
             // Book
             // 
             this.Book.AutoSize = true;
-            this.Book.Font = new System.Drawing.Font("Rockwell Nova", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Book.Location = new System.Drawing.Point(64, 259);
+            this.Book.Font = new System.Drawing.Font("Rockwell Nova", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Book.Location = new System.Drawing.Point(55, 337);
             this.Book.Name = "Book";
-            this.Book.Size = new System.Drawing.Size(156, 19);
+            this.Book.Size = new System.Drawing.Size(189, 23);
             this.Book.TabIndex = 10;
             this.Book.Text = "Book Blood Pickup";
             // 
-            // maskedTextBox1
+            // txtPhone
             // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(202, 217);
-            this.maskedTextBox1.Mask = "    0000-000-0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(142, 25);
-            this.maskedTextBox1.TabIndex = 9;
-            this.maskedTextBox1.MouseEnter += new System.EventHandler(this.maskedTextBox1_MouseEnter);
-            this.maskedTextBox1.MouseLeave += new System.EventHandler(this.maskedTextBox1_MouseLeave);
+            this.txtPhone.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhone.Location = new System.Drawing.Point(247, 287);
+            this.txtPhone.Mask = "    0000-000-0000";
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(142, 25);
+            this.txtPhone.TabIndex = 9;
+            this.txtPhone.MouseEnter += new System.EventHandler(this.maskedTextBox1_MouseEnter);
+            this.txtPhone.MouseLeave += new System.EventHandler(this.maskedTextBox1_MouseLeave);
             // 
-            // textBox2
+            // txtAddress
             // 
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(202, 177);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(142, 25);
-            this.textBox2.TabIndex = 8;
-            this.textBox2.MouseEnter += new System.EventHandler(this.textBox2_MouseEnter);
-            this.textBox2.MouseLeave += new System.EventHandler(this.textBox2_MouseLeave);
+            this.txtAddress.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddress.Location = new System.Drawing.Point(247, 242);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(142, 25);
+            this.txtAddress.TabIndex = 8;
+            this.txtAddress.MouseEnter += new System.EventHandler(this.textBox2_MouseEnter);
+            this.txtAddress.MouseLeave += new System.EventHandler(this.textBox2_MouseLeave);
             // 
             // Address
             // 
             this.Address.AutoSize = true;
-            this.Address.Font = new System.Drawing.Font("Rockwell Nova", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Address.Location = new System.Drawing.Point(64, 181);
+            this.Address.Font = new System.Drawing.Font("Rockwell Nova", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Address.Location = new System.Drawing.Point(55, 244);
             this.Address.Name = "Address";
-            this.Address.Size = new System.Drawing.Size(72, 19);
+            this.Address.Size = new System.Drawing.Size(86, 23);
             this.Address.TabIndex = 7;
             this.Address.Text = "Address";
             // 
             // Phone
             // 
             this.Phone.AutoSize = true;
-            this.Phone.Font = new System.Drawing.Font("Rockwell Nova", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Phone.Location = new System.Drawing.Point(64, 217);
+            this.Phone.Font = new System.Drawing.Font("Rockwell Nova", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Phone.Location = new System.Drawing.Point(55, 290);
             this.Phone.Name = "Phone";
-            this.Phone.Size = new System.Drawing.Size(126, 19);
+            this.Phone.Size = new System.Drawing.Size(151, 23);
             this.Phone.TabIndex = 6;
             this.Phone.Text = "Phone Number";
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(202, 144);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(142, 25);
-            this.textBox1.TabIndex = 5;
-            this.textBox1.MouseEnter += new System.EventHandler(this.textBox1_MouseEnter);
-            this.textBox1.MouseLeave += new System.EventHandler(this.textBox1_MouseLeave);
+            this.txtName.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.Location = new System.Drawing.Point(247, 195);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(142, 25);
+            this.txtName.TabIndex = 5;
+            this.txtName.MouseEnter += new System.EventHandler(this.textBox1_MouseEnter);
+            this.txtName.MouseLeave += new System.EventHandler(this.textBox1_MouseLeave);
             // 
             // Name
             // 
             this.Name.AutoSize = true;
-            this.Name.Font = new System.Drawing.Font("Rockwell Nova", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name.Location = new System.Drawing.Point(64, 145);
+            this.Name.Font = new System.Drawing.Font("Rockwell Nova", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Name.Location = new System.Drawing.Point(55, 195);
             this.Name.Name = "Name";
-            this.Name.Size = new System.Drawing.Size(55, 19);
+            this.Name.Size = new System.Drawing.Size(65, 23);
             this.Name.TabIndex = 4;
             this.Name.Text = "Name";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(55, 88);
+            this.label7.Font = new System.Drawing.Font("Microsoft Tai Le", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Maroon;
+            this.label7.Location = new System.Drawing.Point(55, 116);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(310, 44);
+            this.label7.Size = new System.Drawing.Size(324, 46);
             this.label7.TabIndex = 3;
             this.label7.Text = "-> A medical team will come to your \r\nlocation to collect blood.";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(109, 35);
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(110, 52);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(235, 25);
+            this.label3.Size = new System.Drawing.Size(279, 32);
             this.label3.TabIndex = 2;
             this.label3.Text = "Request Home Pickup";
             // 
@@ -362,19 +366,19 @@
             // 
             this.panel3.BackgroundImage = global::Blood_Donation_Matcher.Properties.Resources.WhatsApp_Image_2026_04_25_at_2_54_31_PM__10_;
             this.panel3.Controls.Add(this.label6);
-            this.panel3.Location = new System.Drawing.Point(496, 12);
+            this.panel3.Location = new System.Drawing.Point(344, 12);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(825, 77);
+            this.panel3.Size = new System.Drawing.Size(1000, 77);
             this.panel3.TabIndex = 1;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Snow;
-            this.label6.Location = new System.Drawing.Point(102, 16);
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(126, 11);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(596, 37);
+            this.label6.Size = new System.Drawing.Size(713, 45);
             this.label6.TabIndex = 0;
             this.label6.Text = "You\'re not just a donor, you\'re a lifesaver";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -384,6 +388,8 @@
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.BackgroundImage = global::Blood_Donation_Matcher.Properties.Resources.Gemini_Generated_Image_j5jglej5jglej5jg;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.radioButton4);
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.comboBoxGovernorates);
             this.panel2.Controls.Add(this.label5);
@@ -391,16 +397,39 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(96, 200);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(459, 401);
+            this.panel2.Size = new System.Drawing.Size(488, 526);
             this.panel2.TabIndex = 0;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(56, 288);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(184, 24);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "->Availability Status";
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton4.ForeColor = System.Drawing.Color.Maroon;
+            this.radioButton4.Location = new System.Drawing.Point(85, 324);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(294, 24);
+            this.radioButton4.TabIndex = 6;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "Ready to donate whenever needed";
+            this.radioButton4.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Crimson;
-            this.button3.Location = new System.Drawing.Point(134, 246);
+            this.button3.Location = new System.Drawing.Point(125, 379);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(168, 32);
+            this.button3.Size = new System.Drawing.Size(227, 32);
             this.button3.TabIndex = 5;
             this.button3.Text = "View Hospital List";
             this.button3.UseVisualStyleBackColor = true;
@@ -440,7 +469,7 @@
             "Sohag",
             "South Sinai",
             "Suez"});
-            this.comboBoxGovernorates.Location = new System.Drawing.Point(115, 177);
+            this.comboBoxGovernorates.Location = new System.Drawing.Point(138, 231);
             this.comboBoxGovernorates.Name = "comboBoxGovernorates";
             this.comboBoxGovernorates.Size = new System.Drawing.Size(214, 25);
             this.comboBoxGovernorates.TabIndex = 3;
@@ -449,7 +478,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(49, 150);
+            this.label5.Location = new System.Drawing.Point(56, 202);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(251, 24);
             this.label5.TabIndex = 2;
@@ -458,21 +487,22 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(49, 88);
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Maroon;
+            this.label4.Location = new System.Drawing.Point(55, 114);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(328, 48);
+            this.label4.Size = new System.Drawing.Size(346, 50);
             this.label4.TabIndex = 1;
             this.label4.Text = "-> Go to a nearby hospital or patient \r\nand donate blood immediately.";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(110, 35);
+            this.label1.Location = new System.Drawing.Point(102, 52);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(219, 25);
+            this.label1.Size = new System.Drawing.Size(259, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Donate In Your Area";
             // 
@@ -519,22 +549,24 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label Address;
         private System.Windows.Forms.Label Phone;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label Name;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.MaskedTextBox txtPhone;
+        private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.Label Book;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rbMobile;
+        private System.Windows.Forms.RadioButton rbCreditCard;
+        private System.Windows.Forms.RadioButton rbFawry;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.Label label8;
     }
 }

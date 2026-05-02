@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,8 +13,18 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace Blood_Donation_Matcher
 {
+
+    public enum PaymentMethod
+    {
+        Fawry,
+        CreditCard,
+        MobileWallet,
+        NotSelected // حالة افتراضية لو مفيش حاجة اختارت
+    }
     public partial class DonateDetailsForm : Form
     {
+        private object rbMobileWallet;
+
         public DonateDetailsForm()
         {
             InitializeComponent();
@@ -53,32 +64,32 @@ namespace Blood_Donation_Matcher
 
         private void textBox1_MouseEnter(object sender, EventArgs e)
         {
-            textBox1.BackColor = Color.LightGray;
+            txtName.BackColor = Color.LightGray;
         }
 
         private void textBox1_MouseLeave(object sender, EventArgs e)
         {
-            textBox1.BackColor = Color.White;
+            txtName.BackColor = Color.White;
         }
 
         private void textBox2_MouseEnter(object sender, EventArgs e)
         {
-            textBox2.BackColor = Color.LightGray;
+            txtAddress.BackColor = Color.LightGray;
         }
 
         private void textBox2_MouseLeave(object sender, EventArgs e)
         {
-            textBox2.BackColor = Color.White;
+            txtAddress.BackColor = Color.White;
         }
 
         private void maskedTextBox1_MouseEnter(object sender, EventArgs e)
         {
-            maskedTextBox1.BackColor = Color.LightGray;
+            txtPhone.BackColor = Color.LightGray;
         }
 
         private void maskedTextBox1_MouseLeave(object sender, EventArgs e)
         {
-            maskedTextBox1.BackColor = Color.White;
+            txtPhone.BackColor = Color.White;
         }
 
         private void dateTimePicker1_MouseEnter(object sender, EventArgs e)
@@ -114,15 +125,60 @@ namespace Blood_Donation_Matcher
         private void button1_Click(object sender, EventArgs e)
         {
 
-            MessageBox.Show("Your request has been submitted successfully!", // نص الرسالة الرئيسي
-                    "THANK YOU FOR YOUR DONATION"); // عنوان الرسالة العلوي
-         
+            string data = "Name: " + txtName.Text +
+                   " | Address: " + txtAddress.Text +
+                   " | Phone: " + txtPhone.Text +
+                   " | Date: " + dateTimePicker1.Value.ToShortDateString();
+
+            // 1. كود الـ File Handling (الحفظ في ملف نصي)
+            // السطر ده وظيفته يفتح الملف (أو ينشئه لو مش موجود) ويضيف السطر الجديد في آخره
+            File.AppendAllText("DonorsData.txt", data + Environment.NewLine);
+
+            // 2. إظهار رسالة النجاح (رسالة واحدة احترافية بعد الحفظ)
+            MessageBox.Show("Your request has been booked successfully and saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            // 3. مسح الخانات لتجهيزها لمستخدم جديد
+            txtName.Clear();
+            txtAddress.Clear();
+            txtPhone.Clear();
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show($"Your generous donation has been received","THANK YOY FOR YOUR DONATION");
-        }
+
+            // استخدام الـ Enum لتخزين طريقة الدفع، وافتراضياً هي NotSelected
+            PaymentMethod selectedMethod = PaymentMethod.NotSelected;
+
+            // تحديد طريقة الدفع بناءً على الـ RadioButton المختارة
+            if (rbFawry.Checked)
+            {
+                selectedMethod = PaymentMethod.Fawry;
+            }
+            else if (rbCreditCard.Checked) 
+            {
+                selectedMethod = PaymentMethod.CreditCard;
+            }
+            else if (rbMobile.Checked) 
+            {
+                selectedMethod = PaymentMethod.MobileWallet;
+            }
+
+            // التحقق من أن المستخدم اختار طريقة دفع
+            if (selectedMethod == PaymentMethod.NotSelected)
+            {
+                // إظهار رسالة تنبيه لو مفيش حاجة اتخارت
+                MessageBox.Show("Please select a payment method first.", "Payment Method Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                // لو اختار فعلاً، بنكمل العملية
+
+                MessageBox.Show($"Your generous donation has been received", "THANK YOU FOR YOUR DONATION", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        
+
+    }
     }
     }
 

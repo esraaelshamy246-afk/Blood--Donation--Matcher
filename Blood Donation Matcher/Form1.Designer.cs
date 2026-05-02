@@ -40,7 +40,6 @@
             this.btnRequest = new System.Windows.Forms.Button();
             this.btnHospitals = new System.Windows.Forms.Button();
             this.btnFeedback = new System.Windows.Forms.Button();
-            this.btnEligibilitycheck = new System.Windows.Forms.Button();
             this.timerMenu = new System.Windows.Forms.Timer(this.components);
             this.maincontentPanel = new System.Windows.Forms.Panel();
             this.Panel1.SuspendLayout();
@@ -59,13 +58,13 @@
             this.Panel1.Location = new System.Drawing.Point(0, 0);
             this.Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Panel1.Name = "Panel1";
-            this.Panel1.Size = new System.Drawing.Size(916, 62);
+            this.Panel1.Size = new System.Drawing.Size(916, 58);
             this.Panel1.TabIndex = 0;
             // 
             // pictureBoxMenu
             // 
             this.pictureBoxMenu.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxMenu.Image")));
-            this.pictureBoxMenu.Location = new System.Drawing.Point(12, 4);
+            this.pictureBoxMenu.Location = new System.Drawing.Point(12, 0);
             this.pictureBoxMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBoxMenu.Name = "pictureBoxMenu";
             this.pictureBoxMenu.Size = new System.Drawing.Size(64, 56);
@@ -80,7 +79,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(82, 9);
+            this.label1.Location = new System.Drawing.Point(67, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(368, 37);
             this.label1.TabIndex = 0;
@@ -96,14 +95,13 @@
             this.panelMenu.Controls.Add(this.btnRequest);
             this.panelMenu.Controls.Add(this.btnHospitals);
             this.panelMenu.Controls.Add(this.btnFeedback);
-            this.panelMenu.Controls.Add(this.btnEligibilitycheck);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.panelMenu.Location = new System.Drawing.Point(0, 62);
+            this.panelMenu.Location = new System.Drawing.Point(0, 58);
             this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Padding = new System.Windows.Forms.Padding(15, 30, 0, 0);
-            this.panelMenu.Size = new System.Drawing.Size(201, 462);
+            this.panelMenu.Size = new System.Drawing.Size(201, 466);
             this.panelMenu.TabIndex = 1;
             this.panelMenu.Visible = false;
             this.panelMenu.WrapContents = false;
@@ -200,21 +198,6 @@
             this.btnFeedback.UseVisualStyleBackColor = false;
             this.btnFeedback.Click += new System.EventHandler(this.btnFeedback_Click);
             // 
-            // btnEligibilitycheck
-            // 
-            this.btnEligibilitycheck.BackColor = System.Drawing.Color.White;
-            this.btnEligibilitycheck.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEligibilitycheck.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEligibilitycheck.ForeColor = System.Drawing.Color.Black;
-            this.btnEligibilitycheck.Location = new System.Drawing.Point(15, 394);
-            this.btnEligibilitycheck.Margin = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.btnEligibilitycheck.Name = "btnEligibilitycheck";
-            this.btnEligibilitycheck.Size = new System.Drawing.Size(170, 39);
-            this.btnEligibilitycheck.TabIndex = 6;
-            this.btnEligibilitycheck.Text = "Eligibility check";
-            this.btnEligibilitycheck.UseVisualStyleBackColor = false;
-            this.btnEligibilitycheck.Click += new System.EventHandler(this.btnEligibilitycheck_Click);
-            // 
             // timerMenu
             // 
             this.timerMenu.Interval = 35;
@@ -224,9 +207,9 @@
             // 
             this.maincontentPanel.BackgroundImage = global::Blood_Donation_Matcher.Properties.Resources.WhatsApp_Image_2026_04_25_at_3_45_47_PM;
             this.maincontentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.maincontentPanel.Location = new System.Drawing.Point(201, 62);
+            this.maincontentPanel.Location = new System.Drawing.Point(201, 58);
             this.maincontentPanel.Name = "maincontentPanel";
-            this.maincontentPanel.Size = new System.Drawing.Size(715, 462);
+            this.maincontentPanel.Size = new System.Drawing.Size(715, 466);
             this.maincontentPanel.TabIndex = 2;
             this.maincontentPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.maincontentPanel_Paint);
             // 
@@ -268,7 +251,5 @@
         private System.Windows.Forms.Button btnFeedback;
         private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.Panel maincontentPanel;
-        private System.Windows.Forms.Button btnEligibilitycheck;
     }
 }
-
