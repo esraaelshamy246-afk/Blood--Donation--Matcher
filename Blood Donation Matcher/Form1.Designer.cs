@@ -40,7 +40,6 @@
             this.btnRequest = new System.Windows.Forms.Button();
             this.btnHospitals = new System.Windows.Forms.Button();
             this.btnFeedback = new System.Windows.Forms.Button();
-            this.btnEligibilitycheck = new System.Windows.Forms.Button();
             this.timerMenu = new System.Windows.Forms.Timer(this.components);
             this.maincontentPanel = new System.Windows.Forms.Panel();
             this.Panel1.SuspendLayout();
@@ -96,7 +95,6 @@
             this.panelMenu.Controls.Add(this.btnRequest);
             this.panelMenu.Controls.Add(this.btnHospitals);
             this.panelMenu.Controls.Add(this.btnFeedback);
-            this.panelMenu.Controls.Add(this.btnEligibilitycheck);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.panelMenu.Location = new System.Drawing.Point(0, 62);
@@ -200,21 +198,6 @@
             this.btnFeedback.UseVisualStyleBackColor = false;
             this.btnFeedback.Click += new System.EventHandler(this.btnFeedback_Click);
             // 
-            // btnEligibilitycheck
-            // 
-            this.btnEligibilitycheck.BackColor = System.Drawing.Color.White;
-            this.btnEligibilitycheck.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEligibilitycheck.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEligibilitycheck.ForeColor = System.Drawing.Color.Black;
-            this.btnEligibilitycheck.Location = new System.Drawing.Point(15, 394);
-            this.btnEligibilitycheck.Margin = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.btnEligibilitycheck.Name = "btnEligibilitycheck";
-            this.btnEligibilitycheck.Size = new System.Drawing.Size(170, 39);
-            this.btnEligibilitycheck.TabIndex = 6;
-            this.btnEligibilitycheck.Text = "Eligibility check";
-            this.btnEligibilitycheck.UseVisualStyleBackColor = false;
-            this.btnEligibilitycheck.Click += new System.EventHandler(this.btnEligibilitycheck_Click);
-            // 
             // timerMenu
             // 
             this.timerMenu.Interval = 35;
@@ -268,7 +251,6 @@
         private System.Windows.Forms.Button btnFeedback;
         private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.Panel maincontentPanel;
-        private System.Windows.Forms.Button btnEligibilitycheck;
     }
 }
 
