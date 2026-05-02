@@ -10,7 +10,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using static Person;
-using static Person.Patient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
+
 
 namespace Blood_Donation_Matcher
 {
@@ -66,56 +68,37 @@ namespace Blood_Donation_Matcher
             string address = textBox5.Text;
             string bloodType = comboBox1.Text;
             string city = comboBox2.Text;
-            string userType = "";
-
-           
-            if (radioButton1.Checked) { userType = "Donor (متبرع)"; }
-            else if (radioButton2.Checked) { userType = "Patient (مريض)"; }
-
-            if (name == "" ||phone == "" || age == "" || bloodType == "" || userType == "")
-    {
-                MessageBox.Show("من فضلك أكملي جميع البيانات الأساسية!", "تنبيه", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-    else
+            string type = "";
+            if (radioButton1.Checked)
             {
-                try
-                {
-                    
-                    BloodType bType = (BloodType)comboBox1.SelectedIndex;
+                type = "Donor (متبرع)";
+            }
+            else if (radioButton2.Checked)
+            {
+                type = "Patient (مريض)";
+            }
 
-                    string record = "";
+            if (name == "" || phone == "" || type == "" || address == ""|| age ==""|| bloodType =="" || city =="")
+            {
+                MessageBox.Show("من فضلك ادخلي البيانات كاملة واختاري النوع", "تنبيه", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                // 4. رسالة نجاح بتعرض البيانات اللي اتكتبت
+                string info = "تم تسجيل البيانات بنجاح:\n" +
+                              "الاسم: " + name + "\n" +
+                              "الموبايل: " + phone + "\n" +
+                              "العمر:" + age + "\n" +
+                              "العنوان:" +address +"\n" +
+                              "فصيله الدم:" +bloodType +"\n" +
+                              "المدينه:" + city + "\n"+
+                              "النوع: " + type;
 
-                    if (radioButton1.Checked) 
-                    {
-                        
-                        Donor d = new Donor(name, phone, int.Parse(age), address, bType, city  );
-                        record = "Donor|" + d.Name + "|" + d.Phone + "|" + d.Age + "|" + d.Address + "|" + d.City + "|" + d.bloodType;
-                    }
-                    else if (radioButton2.Checked) 
-                    {
-                        Patient p = new Patient(name, phone, int.Parse(age), address, bType, city );
-                        record = "Patient|" + p.Name + "|" + p.Phone + "|" + p.Age + "|" + p.Address + "|" + p.City + "|" + p.bloodType;
-                    }
-
-                    
-                    using (StreamWriter sw = new StreamWriter("UsersData.txt", true))
-                    {
-                        sw.WriteLine(record);
-                    }
-
-                    MessageBox.Show("تم الحفظ والربط بنجاح!");
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("حدث خطأ: " + ex.Message);
-                }
-
-
-
+                MessageBox.Show(info, "نجاح", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
         }
-        
+
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -243,7 +226,7 @@ namespace Blood_Donation_Matcher
 }
 
 
-
+//class person 
 public class Person
 {
     public string Name;
@@ -262,29 +245,7 @@ public class Person
         this.bloodType = bloodType;
         this.City = city;
     }
-
-
-
-
-    public class Donor : Person
-    {
-        public Donor(string name, string phone, int age, string address, BloodType bloodType, string city )
-            : base(name, phone, age, address, bloodType, city)
-        {
-
-        }
-
-    }
-
-    public class Patient : Person
-    {
-        public Patient(string name, string phone, int age, string address, BloodType bloodType,string city)
-            : base(name, phone, age, address, bloodType, city)
-        {
-
-        }
-
-
+        //enum  
         public enum BloodType
         {
             A_Positive,
@@ -295,23 +256,7 @@ public class Person
             AB_Negative,
             O_Positive,
             O_Negative
-        }
-
-
-        public class PersonManager
-        {
-            private Person[] people = new Person[100];
-            private int count = 0;
-
-
-            public void AddPerson()
-            {
-                if (count < 100)
-                    count++;
-            }
-
-        }
-    }
+        } 
 }
 
         

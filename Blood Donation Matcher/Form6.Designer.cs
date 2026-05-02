@@ -594,7 +594,7 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Blood_Donation_Matcher.Properties.Resources.WhatsApp_Image_2026_04_25_at_3_45_47_PM;
-            this.ClientSize = new System.Drawing.Size(1431, 795);
+            this.ClientSize = new System.Drawing.Size(1469, 834);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.DarkRed;
             this.Margin = new System.Windows.Forms.Padding(2);
