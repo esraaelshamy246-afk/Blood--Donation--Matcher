@@ -13,8 +13,18 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace Blood_Donation_Matcher
 {
+
+    public enum PaymentMethod
+    {
+        Fawry,
+        CreditCard,
+        MobileWallet,
+        NotSelected // حالة افتراضية لو مفيش حاجة اختارت
+    }
     public partial class DonateDetailsForm : Form
     {
+        private object rbMobileWallet;
+
         public DonateDetailsForm()
         {
             InitializeComponent();
@@ -115,33 +125,19 @@ namespace Blood_Donation_Matcher
         private void button1_Click(object sender, EventArgs e)
         {
 
-            // التحقق إذا كانت الحقول فارغة
-            if (string.IsNullOrWhiteSpace(txtName.Text) ||
-                string.IsNullOrWhiteSpace(txtAddress.Text) ||
-                string.IsNullOrWhiteSpace(txtPhone.Text))
-            {
-                // إظهار رسالة تنبيه للمستخدم
-                MessageBox.Show("Please fill in all the fields first.", "Missing Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            if (dateTimePicker1.Value.Date < DateTime.Today)
-            {
-                MessageBox.Show("Please select a valid future date for blood pickup.", "Invalid Date", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return; // التوقف عن التنفيذ
-            }
-                // إذا وصل الكود هنا، يعني أن كل البيانات صحيحة
-                MessageBox.Show("Your request has been booked successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        
-            string data = "Name: " + txtName.Text + " | Address: " + txtAddress.Text + " | Phone: " + txtPhone.Text + " | Date: " + dateTimePicker1.Value.ToShortDateString();
+            string data = "Name: " + txtName.Text +
+                   " | Address: " + txtAddress.Text +
+                   " | Phone: " + txtPhone.Text +
+                   " | Date: " + dateTimePicker1.Value.ToShortDateString();
 
-            // 3. كود الـ File Handling (الحفظ في ملف نصي)
+            // 1. كود الـ File Handling (الحفظ في ملف نصي)
             // السطر ده وظيفته يفتح الملف (أو ينشئه لو مش موجود) ويضيف السطر الجديد في آخره
             File.AppendAllText("DonorsData.txt", data + Environment.NewLine);
 
-            // 4. إظهار رسالة النجاح بعد الحفظ الفعلي
-            MessageBox.Show("Data saved successfully to the file!");
+            // 2. إظهار رسالة النجاح (رسالة واحدة احترافية بعد الحفظ)
+            MessageBox.Show("Your request has been booked successfully and saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            // 5. اختياري: مسح الخانات لتجهيزها لمستخدم جديد
+            // 3. مسح الخانات لتجهيزها لمستخدم جديد
             txtName.Clear();
             txtAddress.Clear();
             txtPhone.Clear();
@@ -150,9 +146,26 @@ namespace Blood_Donation_Matcher
 
         private void button2_Click(object sender, EventArgs e)
         {
-           
-            // التأكد من اختيار طريقة الدفع
-            if (!rbFawry.Checked && !rbCreditCard.Checked && !rbCreditCard.Checked)
+
+            // استخدام الـ Enum لتخزين طريقة الدفع، وافتراضياً هي NotSelected
+            PaymentMethod selectedMethod = PaymentMethod.NotSelected;
+
+            // تحديد طريقة الدفع بناءً على الـ RadioButton المختارة
+            if (rbFawry.Checked)
+            {
+                selectedMethod = PaymentMethod.Fawry;
+            }
+            else if (rbCreditCard.Checked) 
+            {
+                selectedMethod = PaymentMethod.CreditCard;
+            }
+            else if (rbMobile.Checked) 
+            {
+                selectedMethod = PaymentMethod.MobileWallet;
+            }
+
+            // التحقق من أن المستخدم اختار طريقة دفع
+            if (selectedMethod == PaymentMethod.NotSelected)
             {
                 // إظهار رسالة تنبيه لو مفيش حاجة اتخارت
                 MessageBox.Show("Please select a payment method first.", "Payment Method Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -160,17 +173,12 @@ namespace Blood_Donation_Matcher
             else
             {
                 // لو اختار فعلاً، بنكمل العملية
-                string selectedMethod = "";
 
-                if (rbFawry.Checked) selectedMethod = "Fawry";
-                else if (rbCreditCard.Checked) selectedMethod = "Mobile Wallet";
-                else if (rbCreditCard.Checked) selectedMethod = "Credit Card";
-
-                MessageBox.Show($"Your generous donation has been received", "THANK YOY FOR YOUR DONATION", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show($"Your generous donation has been received", "THANK YOU FOR YOUR DONATION", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         
-       
-        }
+
+    }
     }
     }
 

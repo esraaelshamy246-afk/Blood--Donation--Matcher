@@ -516,7 +516,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1520, 729);
             this.Controls.Add(this.panel1);
-            
+           
             this.Text = "Donate";
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
