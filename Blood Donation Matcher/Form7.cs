@@ -16,12 +16,12 @@ namespace Blood_Donation_Matcher
         {
             InitializeComponent();
             this .DoubleBuffered = true;
-            BloodInfo b1 = new BloodInfo();
-            b1.Type = BloodType.O_Negative;
-            b1.Description ="Universal donor";
-            BloodInfo b2 = new BloodInfo();
-            b2.Type = BloodType.A_Positive;
-            b2.Description = "Common blood type";
+            //BloodInfo b1 = new BloodInfo();
+            //b1.Type = BloodType.O_Negative;
+            //b1.Description ="Universal donor";
+            ////BloodInfo b2 = new BloodInfo();
+            ////b2.Type = BloodType.A_Positive;
+            //b2.Description = "Common blood type";
         }
 
         private void label2_Click(object sender, EventArgs e)
