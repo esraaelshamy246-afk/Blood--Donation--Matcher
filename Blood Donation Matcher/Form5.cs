@@ -21,16 +21,7 @@ namespace Blood_Donation_Matcher
                 return;
             }
 
-            BloodRequest newRequest = new BloodRequest(
-                textBox1.Text,
-                textBox2.Text,
-                numericUpDown1.Value.ToString(),
-                radioButton1.Checked ? "Male" : "Female",
-                comboBox1.Text,
-                comboBox2.Text,
-                checkBox1.Checked ? "Urgent" : "Normal",
-                dateTimePicker1.Text
-            );
+           
 
             allRequests.Add(newRequest);
             MessageBox.Show(newRequest.GetFullMessage(), "Success");
