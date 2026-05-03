@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using Blood_Donation_Matcher;
+using static Blood_Donation_Matcher.Person;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -70,7 +71,7 @@ namespace Blood_Donation_Matcher
             string city = comboBox2.Text;
             string userType = "";
 
-           
+            string info = "";
             string record = "";
 
             if (radioButton1.Checked) { userType = "Donor (متبرع)"; }
@@ -86,7 +87,7 @@ namespace Blood_Donation_Matcher
                 {
                   
 
-                    BloodType bType = (BloodType)comboBox1.SelectedIndex;
+                    string bType = comboBox1.Text ;
 
                     if (radioButton1.Checked) 
                     {

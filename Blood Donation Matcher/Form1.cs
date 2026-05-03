@@ -8,15 +8,6 @@ namespace Blood_Donation_Matcher
         public form1()
         {
             InitializeComponent();
-            this.DoubleBuffered = true;
-            foreach (Control control in this.Controls)
-            {
-                if (control is Panel || control is FlowLayoutPanel)
-                {
-                    var property = control.GetType().GetProperty("DoubleBuffered", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
-                    property.SetValue(control, true, null);
-                }
-            }
         }
         private void LoadForm(Form form)
         {

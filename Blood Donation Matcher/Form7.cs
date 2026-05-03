@@ -15,7 +15,6 @@ namespace Blood_Donation_Matcher
         public HomeContentForm()
         {
             InitializeComponent();
-            this .DoubleBuffered = true;
             //BloodInfo b1 = new BloodInfo();
             //b1.Type = BloodType.O_Negative;
             //b1.Description ="Universal donor";
