@@ -294,6 +294,7 @@
             this.ClientSize = new System.Drawing.Size(1147, 874);
             this.Controls.Add(this.groupBox1);
             this.Name = "form5";
+            this.Text = "4";
             this.Load += new System.EventHandler(this.RequestForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.groupBox1.ResumeLayout(false);
