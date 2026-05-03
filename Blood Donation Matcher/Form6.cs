@@ -5,7 +5,6 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using Blood_Donation_Matcher;
-using static Blood_Donation_Matcher.Person;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -71,42 +70,19 @@ namespace Blood_Donation_Matcher
             string city = comboBox2.Text;
             string userType = "";
 
-            string info = "";
-            string record = "";
+
 
             if (radioButton1.Checked) { userType = "Donor (متبرع)"; }
             else if (radioButton2.Checked) { userType = "Patient (مريض)"; }
 
-            if (name == "" ||phone == "" || age == "" || bloodType == "" || userType == "")
-    {
+            if (name == "" || phone == "" || age == "" || bloodType == "" || userType == "")
+            {
                 MessageBox.Show("من فضلك أكملي جميع البيانات الأساسية!", "تنبيه", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-    else
+            else
             {
                 try
                 {
-                  
-
-                    string bType = comboBox1.Text ;
-
-                    if (radioButton1.Checked) 
-                    {
-                        
-                        //Donor d = new Donor(name, phone, int.Parse(age), address,(Person.Patient.BloodType ) bType, city  );
-                        //record = "Donor|" + d.Name + "|" + d.Phone + "|" + d.Age + "|" + d.Address + "|" + d.City + "|" + d.bloodType;
-                    }
-                    else if (radioButton2.Checked) 
-                    {
-                        //Patient p = new Patient(name, phone, int.Parse(age), address,(Person.Patient.BloodType ) bType, city );
-                        //record = "Patient|" + p.Name + "|" + p.Phone + "|" + p.Age + "|" + p.Address + "|" + p.City + "|" + p.bloodType;
-                    }
-
-                     
-                    using (StreamWriter sw = new StreamWriter("UsersData.txt", true))
-                    {
-                        sw.WriteLine(record);
-                    }
-                      
                     MessageBox.Show("تم الحفظ والربط بنجاح!");
                 }
                 catch (Exception ex)
@@ -114,36 +90,9 @@ namespace Blood_Donation_Matcher
                     MessageBox.Show("حدث خطأ: " + ex.Message);
                 }
 
-
-                MessageBox.Show(info, "نجاح", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
             }
         }
 
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-   
-            textBox2.Text = "";
-            numericUpDown1.Text = "";
-            textBox3.Text = ""; 
-            textBox5.Text = "";
-            textBox6.Text = "";
-            
-            comboBox1.SelectedIndex = -1; 
-            comboBox2.SelectedIndex = -1; 
-
-            
-            radioButton1.Checked = false; 
-            radioButton2.Checked = false; 
-
-            
-            textBox5.Text = "No file selected";    
-
-            
-            textBox2.Focus();
-        
-    }
 
         private void RegisterForm_Load(object sender, EventArgs e)
         {
