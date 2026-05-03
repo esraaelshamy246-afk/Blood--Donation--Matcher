@@ -1,45 +1,33 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.IO;
-using Blood_Donation_Matcher;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Xml.Linq;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-
-
-
-namespace Blood_Donation_Matcher
+﻿public class Person
 {
-    public partial class RegisterForm : Form
+    public string Name { get; set; }
+    public string Phone { get; set; }
+    public string Age { get; set; } // جعلناه string ليتوافق مع استخدامك في BloodRequest
+    public string Gender { get; set; }
+    public string Address { get; set; }
+    public string City { get; set; }
+    public string BloodType { get; set; } // تم تغييره لـ string لتسهيل التعامل مع الـ ComboBox
+
+    // المشد (Constructor) الذي تستخدمه فئة BloodRequest
+    public Person(string name, string phone, string age, string gender)
     {
-        public RegisterForm()
-        {
-            InitializeComponent();
-        }
+        Name = name;
+        Phone = phone;
+        Age = age;
+        Gender = gender;
+    }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton1.Checked)
-            {
-                radioButton2.Checked = false;
-            }
-        }
+    // المشد الخاص بعملية التسجيل الكاملة
+    public Person(string name, string phone, string age, string address, string bloodType, string city)
+    {
+        Name = name;
+        Phone = phone;
+        Age = age;
+        Address = address;
+        BloodType = bloodType;
+        City = city;
+    }
+}
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {

@@ -4,7 +4,7 @@ namespace Blood_Donation_Matcher
 {
     public class BloodRequest : Person
     {
-        public string BloodType { get; set; }
+        // قمنا بحذف BloodType من هنا لأنه موجود بالفعل في Person حسب التحذير
         public string RequiredBags { get; set; }
         public string Status { get; set; }
         public string RequestDate { get; set; }
@@ -13,7 +13,8 @@ namespace Blood_Donation_Matcher
                             string type, string bags, string status, string date)
             : base(name, phone,int.Parse(age),gender,(Person.BloodType)Enum.Parse(typeof(Person.BloodType),type),status ,"AnyValue")
         {
-            BloodType = type;
+            // BloodType سيتم توريثه من Person فلا داعي لتعريفه مجدداً هنا
+            this.BloodType = type;
             RequiredBags = bags;
             Status = status;
             RequestDate = date;
@@ -21,11 +22,12 @@ namespace Blood_Donation_Matcher
 
         public string GetFullMessage()
         {
+            // ملاحظة: تأكدي أن اسم الخاصية في كلاس Person هو Gender وليس اسماً آخر
             return $@"Request Registered Successfully:
             Patient: {Name}
             Blood Type: {BloodType}
             Age: {Age}
-            Gender: {Gender}
+            Gender: {base.Gender} 
             Phone: {Phone}
             Required Units: {RequiredBags}
             Status: {Status}
