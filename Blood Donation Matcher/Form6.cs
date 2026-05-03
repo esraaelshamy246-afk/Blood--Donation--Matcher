@@ -77,7 +77,7 @@ namespace Blood_Donation_Matcher
 
         private void textBox2_MouseEnter(object sender, EventArgs e)
         {
-            textBox2.BackColor= Color.LightGray;
+            textBox2.BackColor = Color.LightGray;
         }
         private void textBox2_MouseLeave(object sender, EventArgs e)
         {
@@ -101,17 +101,17 @@ namespace Blood_Donation_Matcher
 
         private void textBox4_MouseEnter(object sender, EventArgs e)
         {
-            textBox3.BackColor= Color.LightGray;
+            textBox3.BackColor = Color.LightGray;
         }
 
         private void textBox4_MouseLeave(object sender, EventArgs e)
         {
-            textBox3.BackColor= Color.White;
+            textBox3.BackColor = Color.White;
         }
 
         private void comboBox1_MouseEnter(object sender, EventArgs e)
         {
-            comboBox1.BackColor= Color.LightGray;
+            comboBox1.BackColor = Color.LightGray;
         }
 
         private void comboBox1_MouseLeave(object sender, EventArgs e)
@@ -126,7 +126,7 @@ namespace Blood_Donation_Matcher
 
         private void textBox6_MouseEnter(object sender, EventArgs e)
         {
-            textBox6.BackColor= Color.LightGray;
+            textBox6.BackColor = Color.LightGray;
         }
 
         private void comboBox2_MouseEnter(object sender, EventArgs e)
@@ -141,12 +141,12 @@ namespace Blood_Donation_Matcher
 
         private void textBox5_MouseEnter(object sender, EventArgs e)
         {
-            textBox5.BackColor= Color.LightGray;
+            textBox5.BackColor = Color.LightGray;
         }
 
         private void textBox5_MouseLeave(object sender, EventArgs e)
         {
-            textBox5.BackColor= Color.White;
+            textBox5.BackColor = Color.White;
         }
 
         private void button1_MouseEnter(object sender, EventArgs e)
@@ -161,13 +161,13 @@ namespace Blood_Donation_Matcher
 
         private void textBox2_MouseLeave_1(object sender, EventArgs e)
         {
-            textBox2.BackColor = Color.White;  
+            textBox2.BackColor = Color.White;
         }
 
         private void button_Click(object sender, EventArgs e)
         {
-           
-        string name = textBox2.Text;
+
+            string name = textBox2.Text;
             string phone = textBox3.Text;
             string age = numericUpDown1.Text;
             string address = textBox5.Text;
@@ -183,8 +183,9 @@ namespace Blood_Donation_Matcher
             {
                 try
                 {
+                    string gender = radioButton1.Checked ? "ذكر" : "أنثى";
                     // إنشاء كائن من Person وحفظ البيانات فيه
-                    Person newUser = new Person(name, phone, age, address, bloodType, city);
+                    Person newUser = new Person(name, phone,int.Parse(age), address, (Person.BloodType)Enum.Parse(typeof(Person.BloodType), bloodType), city, gender);
                     MessageBox.Show($"تم تسجيل {newUser.Name} بنجاح!");
                 }
                 catch (Exception ex)
@@ -193,241 +194,39 @@ namespace Blood_Donation_Matcher
                 }
             }
         }
-    }
-}
-
-
-//class person 
-public class Person
-{
-    public string Name;
-    public string Phone;
-    public int Age;
-    public string Address;
-    public BloodType bloodType;
-    public string City;
-    private string age;
-    private string gender;
-
-    public Person(string name, string phone, string age, string gender)
-    {
-        Name = name;
-        Phone = phone;
-        this.age = age;
-        this.gender = gender;
-    }
-
-    public Person(string name, string phone, int age, string address, BloodType bloodType, string city)
-    {
-        this.Name = name;
-        this.Phone = phone;
-        this.Age = age;
-        this.Address = address;
-        this.bloodType = bloodType;
-        this.City = city;
-    }
-        //enum  
-        public enum BloodType
+        //class person 
+        public class Person
         {
-            A_Positive,
-            A_Negative,
-            B_Positive,
-            B_Negative,
-            AB_Positive,
-            AB_Negative,
-            O_Positive,
-            O_Negative
-        } 
-}
+            public string Name;
+            public string Phone;
+            public int Age;
+            public string Address;
+            public BloodType bloodType;
+            public string City;
+            public string Gender;
 
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton2.Checked)
+            public Person(string name, string phone, int age, string address, BloodType bloodType, string city, string gender)
             {
-                radioButton1.Checked = false;
+                this.Name = name;
+                this.Phone = phone;
+                this.Age = age;
+                this.Address = address;
+                this.bloodType = bloodType;
+                this.City = city;
+                this.Gender = gender;
             }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog ofd = new OpenFileDialog();
-
-            if (ofd.ShowDialog() == DialogResult.OK)
+            //enum  
+            public enum BloodType
             {
-                textBox2.Text = ofd.FileName;
+                A_Positive,
+                A_Negative,
+                B_Positive,
+                B_Negative,
+                AB_Positive,
+                AB_Negative,
+                O_Positive,
+                O_Negative
             }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-            string name = textBox2.Text;
-            string phone = textBox3.Text;
-            string age = numericUpDown1.Text;
-            string address = textBox5.Text;
-            string bloodType = comboBox1.Text;
-            string city = comboBox2.Text;
-            string userType = "";
-
-
-
-            if (radioButton1.Checked) { userType = "Donor (متبرع)"; }
-            else if (radioButton2.Checked) { userType = "Patient (مريض)"; }
-
-            if (name == "" || phone == "" || age == "" || bloodType == "" || userType == "")
-            {
-                MessageBox.Show("من فضلك أكملي جميع البيانات الأساسية!", "تنبيه", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else
-            {
-                try
-                {
-                    MessageBox.Show("تم الحفظ والربط بنجاح!");
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("حدث خطأ: " + ex.Message);
-                }
-
-            }
-        }
-
-
-        private void RegisterForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_MouseEnter(object sender, EventArgs e)
-        {
-            textBox2.BackColor= Color.LightGray;
-        }
-        private void textBox2_MouseLeave(object sender, EventArgs e)
-        {
-            textBox2.BackColor = Color.White;
-        }
-
-        private void numericUpDown1_MouseDown(object sender, MouseEventArgs e)
-        {
-            numericUpDown1.BackColor = Color.White;
-        }
-
-        private void numericUpDown1_MouseClick(object sender, MouseEventArgs e)
-        {
-            numericUpDown1.BackColor = Color.White;
-        }
-
-        private void numericUpDown1_MouseUp(object sender, MouseEventArgs e)
-        {
-            numericUpDown1.BackColor = Color.White;
-        }
-
-        private void textBox4_MouseEnter(object sender, EventArgs e)
-        {
-            textBox3.BackColor= Color.LightGray;
-        }
-
-        private void textBox4_MouseLeave(object sender, EventArgs e)
-        {
-            textBox3.BackColor= Color.White;
-        }
-
-        private void comboBox1_MouseEnter(object sender, EventArgs e)
-        {
-            comboBox1.BackColor= Color.LightGray;
-        }
-
-        private void comboBox1_MouseLeave(object sender, EventArgs e)
-        {
-            comboBox1.BackColor = Color.White;
-        }
-
-        private void textBox6_MouseLeave(object sender, EventArgs e)
-        {
-            textBox6.BackColor = Color.White;
-        }
-
-        private void textBox6_MouseEnter(object sender, EventArgs e)
-        {
-            textBox6.BackColor= Color.LightGray;
-        }
-
-        private void comboBox2_MouseEnter(object sender, EventArgs e)
-        {
-            comboBox2.BackColor = Color.LightGray;
-        }
-
-        private void comboBox2_MouseLeave(object sender, EventArgs e)
-        {
-            comboBox2.BackColor = Color.White;
-        }
-
-        private void textBox5_MouseEnter(object sender, EventArgs e)
-        {
-            textBox5.BackColor= Color.LightGray;
-        }
-
-        private void textBox5_MouseLeave(object sender, EventArgs e)
-        {
-            textBox5.BackColor= Color.White;
-        }
-
-        private void button1_MouseEnter(object sender, EventArgs e)
-        {
-            button1.BackColor = Color.LightGray;
-        }
-
-        private void button1_MouseLeave(object sender, EventArgs e)
-        {
-            button1.BackColor = Color.White;
-        }
-
-        private void textBox2_MouseLeave_1(object sender, EventArgs e)
-        {
-            textBox2.BackColor = Color.White;  
         }
     }
 }
-
-
-//class person 
-public class Person
-{
-    public string Name;
-    public string Phone;
-    public int Age;
-    public string Address;
-    public BloodType bloodType;
-    public string City;
-    public string Gender;
-
-    public Person(string name, string phone, int age, string address, BloodType bloodType, string city, string gender)
-    {
-        this.Name = name;
-        this.Phone = phone;
-        this.Age = age;
-        this.Address = address;
-        this.bloodType = bloodType;
-        this.City = city;
-        this.Gender = gender;
-    }
-        //enum  
-        public enum BloodType
-        {
-            A_Positive,
-            A_Negative,
-            B_Positive,
-            B_Negative,
-            AB_Positive,
-            AB_Negative,
-            O_Positive,
-            O_Negative
-        } 
-}
-
-        

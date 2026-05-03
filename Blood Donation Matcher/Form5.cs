@@ -20,8 +20,16 @@ namespace Blood_Donation_Matcher
                 MessageBox.Show("Please enter the patient name");
                 return;
             }
+            string name = textBox1.Text;
+            string phone = textBox2.Text;
+            string age = numericUpDown1.Value.ToString();
+            string gender= comboBox1.SelectedItem?.ToString() ?? "Not specified";
+            string bloodType = comboBox2.SelectedItem?.ToString() ?? "Not specified";
+            string bags = numericUpDown1.Value.ToString();
+            string status = "Pending";
+            string date = DateTime.Now.ToString("yyyy-MM-dd");
+            BloodRequest newRequest = new BloodRequest(name, phone, age, gender, bloodType, bags, status, date);
 
-           
 
             allRequests.Add(newRequest);
             MessageBox.Show(newRequest.GetFullMessage(), "Success");

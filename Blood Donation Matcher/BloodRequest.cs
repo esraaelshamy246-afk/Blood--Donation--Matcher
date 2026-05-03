@@ -16,7 +16,7 @@ namespace Blood_Donation_Matcher
             : base(name, phone,int.Parse(age),gender,(Person.BloodType)Enum.Parse(typeof(Person.BloodType),type),status ,"AnyValue")
         {
             // BloodType سيتم توريثه من Person فلا داعي لتعريفه مجدداً هنا
-            this.BloodType = type;
+            this.bloodType = (RegisterForm.Person .BloodType)Enum.Parse(typeof(RegisterForm.Person.BloodType), type);
             RequiredBags = bags;
             Status = status;
             RequestDate = date;
@@ -27,7 +27,7 @@ namespace Blood_Donation_Matcher
             // ملاحظة: تأكدي أن اسم الخاصية في كلاس Person هو Gender وليس اسماً آخر
             return $@"Request Registered Successfully:
             Patient: {Name}
-            Blood Type: {BloodType}
+            Blood Type: {bloodType}
             Age: {Age}
             Gender: {base.Gender} 
             Phone: {Phone}
