@@ -205,8 +205,9 @@ public class Person
     public string Address;
     public BloodType bloodType;
     public string City;
+    public string Gender;
 
-    public Person(string name, string phone, int age, string address, BloodType bloodType, string city)
+    public Person(string name, string phone, int age, string address, BloodType bloodType, string city, string gender)
     {
         this.Name = name;
         this.Phone = phone;
@@ -214,6 +215,7 @@ public class Person
         this.Address = address;
         this.bloodType = bloodType;
         this.City = city;
+        this.Gender = gender;
     }
         //enum  
         public enum BloodType

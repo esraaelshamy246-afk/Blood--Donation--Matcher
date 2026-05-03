@@ -11,7 +11,7 @@ namespace Blood_Donation_Matcher
 
         public BloodRequest(string name, string phone, string age, string gender,
                             string type, string bags, string status, string date)
-            : base(name, phone, age, gender)
+            : base(name, phone,int.Parse(age),gender,(Person.BloodType)Enum.Parse(typeof(Person.BloodType),type),status ,"AnyValue")
         {
             BloodType = type;
             RequiredBags = bags;
