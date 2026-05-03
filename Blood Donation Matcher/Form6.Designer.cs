@@ -206,7 +206,7 @@
             this.label4.Font = new System.Drawing.Font("Segoe MDL2 Assets", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(11, 150);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 27);
+            this.label4.Size = new System.Drawing.Size(36, 27);
             this.label4.TabIndex = 5;
             this.label4.Text = "👤";
             // 
@@ -222,7 +222,7 @@
             this.button2.TabIndex = 6;
             this.button2.Text = "   Register  ";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.button_Click);
             // 
             // groupBox2
             // 
@@ -413,7 +413,7 @@
             this.label17.Font = new System.Drawing.Font("Segoe MDL2 Assets", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(9, 413);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(29, 19);
+            this.label17.Size = new System.Drawing.Size(21, 19);
             this.label17.TabIndex = 17;
             this.label17.Text = "📍";
             // 
@@ -435,7 +435,7 @@
             this.label13.Font = new System.Drawing.Font("Segoe MDL2 Assets", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(503, 254);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(29, 19);
+            this.label13.Size = new System.Drawing.Size(25, 19);
             this.label13.TabIndex = 13;
             this.label13.Text = "🩸";
             // 
@@ -456,7 +456,7 @@
             this.label11.Font = new System.Drawing.Font("Segoe MDL2 Assets", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(503, 189);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(31, 20);
+            this.label11.Size = new System.Drawing.Size(30, 20);
             this.label11.TabIndex = 11;
             this.label11.Text = "📞";
             // 
@@ -559,7 +559,7 @@
             this.label7.Font = new System.Drawing.Font("Segoe MDL2 Assets", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(9, 252);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(30, 20);
+            this.label7.Size = new System.Drawing.Size(29, 20);
             this.label7.TabIndex = 3;
             this.label7.Text = "📅";
             // 
@@ -569,7 +569,7 @@
             this.label5.Font = new System.Drawing.Font("Segoe MDL2 Assets", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(9, 190);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(29, 19);
+            this.label5.Size = new System.Drawing.Size(26, 19);
             this.label5.TabIndex = 0;
             this.label5.Text = "👤";
             // 
